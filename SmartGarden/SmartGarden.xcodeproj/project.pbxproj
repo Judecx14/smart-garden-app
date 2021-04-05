@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E4776DD261A944A002AA368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4776DC261A944A002AA368 /* AppDelegate.swift */; };
+		3E4776DF261A944B002AA368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4776DE261A944B002AA368 /* ViewController.swift */; };
+		3E4776E2261A944B002AA368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4776E0261A944B002AA368 /* Main.storyboard */; };
+		3E4776E4261A944D002AA368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E4776E3261A944D002AA368 /* Assets.xcassets */; };
+		3E4776E7261A944D002AA368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4776E5261A944D002AA368 /* LaunchScreen.storyboard */; };
+		3E4776F2261A944D002AA368 /* SmartGardenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4776F1261A944D002AA368 /* SmartGardenTests.swift */; };
+		3E4776FD261A944D002AA368 /* SmartGardenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4776FC261A944D002AA368 /* SmartGardenUITests.swift */; };
+		3E477710261A96DF002AA368 /* image 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47770A261A96DF002AA368 /* image 5.png */; };
+		3E477711261A96DF002AA368 /* image 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47770B261A96DF002AA368 /* image 8.png */; };
+		3E477712261A96DF002AA368 /* image 12.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47770C261A96DF002AA368 /* image 12.png */; };
+		3E477713261A96DF002AA368 /* image 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47770D261A96DF002AA368 /* image 7.png */; };
+		3E477714261A96DF002AA368 /* image 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47770E261A96DF002AA368 /* image 4.png */; };
+		3E477715261A96DF002AA368 /* image 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47770F261A96DF002AA368 /* image 1.png */; };
+		3E47771F261AA9A9002AA368 /* bkg_sign.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E477718261AA9A8002AA368 /* bkg_sign.png */; };
+		3E477720261AA9A9002AA368 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E477719261AA9A8002AA368 /* edit.png */; };
+		3E477721261AA9A9002AA368 /* view.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47771A261AA9A8002AA368 /* view.png */; };
+		3E477722261AA9A9002AA368 /* pass.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47771B261AA9A8002AA368 /* pass.png */; };
+		3E477723261AA9A9002AA368 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47771C261AA9A8002AA368 /* help.png */; };
+		3E477724261AA9A9002AA368 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47771D261AA9A9002AA368 /* mail.png */; };
+		3E477725261AA9A9002AA368 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47771E261AA9A9002AA368 /* profile.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E4776EE261A944D002AA368 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E4776D1261A944A002AA368 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E4776D8261A944A002AA368;
+			remoteInfo = SmartGarden;
+		};
+		3E4776F9261A944D002AA368 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E4776D1261A944A002AA368 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E4776D8261A944A002AA368;
+			remoteInfo = SmartGarden;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E4776D9261A944A002AA368 /* SmartGarden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartGarden.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4776DC261A944A002AA368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E4776DE261A944B002AA368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3E4776E1261A944B002AA368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E4776E3261A944D002AA368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E4776E6261A944D002AA368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E4776E8261A944D002AA368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E4776ED261A944D002AA368 /* SmartGardenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartGardenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4776F1261A944D002AA368 /* SmartGardenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartGardenTests.swift; sourceTree = "<group>"; };
+		3E4776F3261A944D002AA368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E4776F8261A944D002AA368 /* SmartGardenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartGardenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4776FC261A944D002AA368 /* SmartGardenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartGardenUITests.swift; sourceTree = "<group>"; };
+		3E4776FE261A944D002AA368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E47770A261A96DF002AA368 /* image 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image 5.png"; sourceTree = "<group>"; };
+		3E47770B261A96DF002AA368 /* image 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image 8.png"; sourceTree = "<group>"; };
+		3E47770C261A96DF002AA368 /* image 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image 12.png"; sourceTree = "<group>"; };
+		3E47770D261A96DF002AA368 /* image 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image 7.png"; sourceTree = "<group>"; };
+		3E47770E261A96DF002AA368 /* image 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image 4.png"; sourceTree = "<group>"; };
+		3E47770F261A96DF002AA368 /* image 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image 1.png"; sourceTree = "<group>"; };
+		3E477718261AA9A8002AA368 /* bkg_sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bkg_sign.png; sourceTree = "<group>"; };
+		3E477719261AA9A8002AA368 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		3E47771A261AA9A8002AA368 /* view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = view.png; sourceTree = "<group>"; };
+		3E47771B261AA9A8002AA368 /* pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pass.png; sourceTree = "<group>"; };
+		3E47771C261AA9A8002AA368 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		3E47771D261AA9A9002AA368 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
+		3E47771E261AA9A9002AA368 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E4776D6261A944A002AA368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E4776EA261A944D002AA368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E4776F5261A944D002AA368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E4776D0261A944A002AA368 = {
+			isa = PBXGroup;
+			children = (
+				3E4776DB261A944A002AA368 /* SmartGarden */,
+				3E4776F0261A944D002AA368 /* SmartGardenTests */,
+				3E4776FB261A944D002AA368 /* SmartGardenUITests */,
+				3E4776DA261A944A002AA368 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E4776DA261A944A002AA368 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E4776D9261A944A002AA368 /* SmartGarden.app */,
+				3E4776ED261A944D002AA368 /* SmartGardenTests.xctest */,
+				3E4776F8261A944D002AA368 /* SmartGardenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E4776DB261A944A002AA368 /* SmartGarden */ = {
+			isa = PBXGroup;
+			children = (
+				3E477716261A96F1002AA368 /* Resources */,
+				3E4776DC261A944A002AA368 /* AppDelegate.swift */,
+				3E4776DE261A944B002AA368 /* ViewController.swift */,
+				3E4776E0261A944B002AA368 /* Main.storyboard */,
+				3E4776E3261A944D002AA368 /* Assets.xcassets */,
+				3E4776E5261A944D002AA368 /* LaunchScreen.storyboard */,
+				3E4776E8261A944D002AA368 /* Info.plist */,
+			);
+			path = SmartGarden;
+			sourceTree = "<group>";
+		};
+		3E4776F0261A944D002AA368 /* SmartGardenTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E4776F1261A944D002AA368 /* SmartGardenTests.swift */,
+				3E4776F3261A944D002AA368 /* Info.plist */,
+			);
+			path = SmartGardenTests;
+			sourceTree = "<group>";
+		};
+		3E4776FB261A944D002AA368 /* SmartGardenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3E4776FC261A944D002AA368 /* SmartGardenUITests.swift */,
+				3E4776FE261A944D002AA368 /* Info.plist */,
+			);
+			path = SmartGardenUITests;
+			sourceTree = "<group>";
+		};
+		3E477716261A96F1002AA368 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3E477726261AA9B3002AA368 /* MainResources */,
+				3E477717261A970B002AA368 /* Launch */,
+				3E47770D261A96DF002AA368 /* image 7.png */,
+				3E47770C261A96DF002AA368 /* image 12.png */,
+				3E47770F261A96DF002AA368 /* image 1.png */,
+				3E47770E261A96DF002AA368 /* image 4.png */,
+				3E47770A261A96DF002AA368 /* image 5.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3E477717261A970B002AA368 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				3E47770B261A96DF002AA368 /* image 8.png */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		3E477726261AA9B3002AA368 /* MainResources */ = {
+			isa = PBXGroup;
+			children = (
+				3E47771D261AA9A9002AA368 /* mail.png */,
+				3E47771B261AA9A8002AA368 /* pass.png */,
+				3E47771E261AA9A9002AA368 /* profile.png */,
+				3E47771A261AA9A8002AA368 /* view.png */,
+				3E477718261AA9A8002AA368 /* bkg_sign.png */,
+				3E477719261AA9A8002AA368 /* edit.png */,
+				3E47771C261AA9A8002AA368 /* help.png */,
+			);
+			path = MainResources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E4776D8261A944A002AA368 /* SmartGarden */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E477701261A944E002AA368 /* Build configuration list for PBXNativeTarget "SmartGarden" */;
+			buildPhases = (
+				3E4776D5261A944A002AA368 /* Sources */,
+				3E4776D6261A944A002AA368 /* Frameworks */,
+				3E4776D7261A944A002AA368 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartGarden;
+			productName = SmartGarden;
+			productReference = 3E4776D9261A944A002AA368 /* SmartGarden.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E4776EC261A944D002AA368 /* SmartGardenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E477704261A944E002AA368 /* Build configuration list for PBXNativeTarget "SmartGardenTests" */;
+			buildPhases = (
+				3E4776E9261A944D002AA368 /* Sources */,
+				3E4776EA261A944D002AA368 /* Frameworks */,
+				3E4776EB261A944D002AA368 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E4776EF261A944D002AA368 /* PBXTargetDependency */,
+			);
+			name = SmartGardenTests;
+			productName = SmartGardenTests;
+			productReference = 3E4776ED261A944D002AA368 /* SmartGardenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3E4776F7261A944D002AA368 /* SmartGardenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E477707261A944E002AA368 /* Build configuration list for PBXNativeTarget "SmartGardenUITests" */;
+			buildPhases = (
+				3E4776F4261A944D002AA368 /* Sources */,
+				3E4776F5261A944D002AA368 /* Frameworks */,
+				3E4776F6261A944D002AA368 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E4776FA261A944D002AA368 /* PBXTargetDependency */,
+			);
+			name = SmartGardenUITests;
+			productName = SmartGardenUITests;
+			productReference = 3E4776F8261A944D002AA368 /* SmartGardenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E4776D1261A944A002AA368 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "E-Nexus";
+				TargetAttributes = {
+					3E4776D8261A944A002AA368 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					3E4776EC261A944D002AA368 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 3E4776D8261A944A002AA368;
+					};
+					3E4776F7261A944D002AA368 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 3E4776D8261A944A002AA368;
+					};
+				};
+			};
+			buildConfigurationList = 3E4776D4261A944A002AA368 /* Build configuration list for PBXProject "SmartGarden" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E4776D0261A944A002AA368;
+			productRefGroup = 3E4776DA261A944A002AA368 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E4776D8261A944A002AA368 /* SmartGarden */,
+				3E4776EC261A944D002AA368 /* SmartGardenTests */,
+				3E4776F7261A944D002AA368 /* SmartGardenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E4776D7261A944A002AA368 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E4776E7261A944D002AA368 /* LaunchScreen.storyboard in Resources */,
+				3E4776E4261A944D002AA368 /* Assets.xcassets in Resources */,
+				3E477721261AA9A9002AA368 /* view.png in Resources */,
+				3E477710261A96DF002AA368 /* image 5.png in Resources */,
+				3E47771F261AA9A9002AA368 /* bkg_sign.png in Resources */,
+				3E477720261AA9A9002AA368 /* edit.png in Resources */,
+				3E477723261AA9A9002AA368 /* help.png in Resources */,
+				3E477713261A96DF002AA368 /* image 7.png in Resources */,
+				3E477712261A96DF002AA368 /* image 12.png in Resources */,
+				3E477715261A96DF002AA368 /* image 1.png in Resources */,
+				3E477722261AA9A9002AA368 /* pass.png in Resources */,
+				3E477724261AA9A9002AA368 /* mail.png in Resources */,
+				3E477714261A96DF002AA368 /* image 4.png in Resources */,
+				3E4776E2261A944B002AA368 /* Main.storyboard in Resources */,
+				3E477711261A96DF002AA368 /* image 8.png in Resources */,
+				3E477725261AA9A9002AA368 /* profile.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E4776EB261A944D002AA368 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E4776F6261A944D002AA368 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E4776D5261A944A002AA368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E4776DF261A944B002AA368 /* ViewController.swift in Sources */,
+				3E4776DD261A944A002AA368 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E4776E9261A944D002AA368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E4776F2261A944D002AA368 /* SmartGardenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E4776F4261A944D002AA368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E4776FD261A944D002AA368 /* SmartGardenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E4776EF261A944D002AA368 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E4776D8261A944A002AA368 /* SmartGarden */;
+			targetProxy = 3E4776EE261A944D002AA368 /* PBXContainerItemProxy */;
+		};
+		3E4776FA261A944D002AA368 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E4776D8261A944A002AA368 /* SmartGarden */;
+			targetProxy = 3E4776F9261A944D002AA368 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E4776E0261A944B002AA368 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E4776E1261A944B002AA368 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3E4776E5261A944D002AA368 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E4776E6261A944D002AA368 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E4776FF261A944E002AA368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E477700261A944E002AA368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E477702261A944E002AA368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartGarden/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "E-Nexus.SmartGarden";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E477703261A944E002AA368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartGarden/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "E-Nexus.SmartGarden";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3E477705261A944E002AA368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartGardenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "E-Nexus.SmartGardenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartGarden.app/SmartGarden";
+			};
+			name = Debug;
+		};
+		3E477706261A944E002AA368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartGardenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "E-Nexus.SmartGardenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartGarden.app/SmartGarden";
+			};
+			name = Release;
+		};
+		3E477708261A944E002AA368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartGardenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "E-Nexus.SmartGardenUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartGarden;
+			};
+			name = Debug;
+		};
+		3E477709261A944E002AA368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartGardenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "E-Nexus.SmartGardenUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartGarden;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E4776D4261A944A002AA368 /* Build configuration list for PBXProject "SmartGarden" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E4776FF261A944E002AA368 /* Debug */,
+				3E477700261A944E002AA368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E477701261A944E002AA368 /* Build configuration list for PBXNativeTarget "SmartGarden" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E477702261A944E002AA368 /* Debug */,
+				3E477703261A944E002AA368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E477704261A944E002AA368 /* Build configuration list for PBXNativeTarget "SmartGardenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E477705261A944E002AA368 /* Debug */,
+				3E477706261A944E002AA368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E477707261A944E002AA368 /* Build configuration list for PBXNativeTarget "SmartGardenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E477708261A944E002AA368 /* Debug */,
+				3E477709261A944E002AA368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E4776D1261A944A002AA368 /* Project object */;
+}
