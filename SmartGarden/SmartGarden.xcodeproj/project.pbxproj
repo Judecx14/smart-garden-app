@@ -27,6 +27,8 @@
 		3E477723261AA9A9002AA368 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47771C261AA9A8002AA368 /* help.png */; };
 		3E477724261AA9A9002AA368 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47771D261AA9A9002AA368 /* mail.png */; };
 		3E477725261AA9A9002AA368 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47771E261AA9A9002AA368 /* profile.png */; };
+		3EF9CCCF261BC7A4001E6ABD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF9CCCE261BC7A4001E6ABD /* LoginViewController.swift */; };
+		3EF9CCD1261BC7DC001E6ABD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF9CCD0261BC7DC001E6ABD /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		3E47771C261AA9A8002AA368 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
 		3E47771D261AA9A9002AA368 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
 		3E47771E261AA9A9002AA368 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		3EF9CCCE261BC7A4001E6ABD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3EF9CCD0261BC7DC001E6ABD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 		3E4776DB261A944A002AA368 /* SmartGarden */ = {
 			isa = PBXGroup;
 			children = (
+				3EF9CCCD261BC778001E6ABD /* Controllers */,
 				3E477716261A96F1002AA368 /* Resources */,
 				3E4776DC261A944A002AA368 /* AppDelegate.swift */,
 				3E4776DE261A944B002AA368 /* ViewController.swift */,
@@ -186,6 +191,15 @@
 				3E47771C261AA9A8002AA368 /* help.png */,
 			);
 			path = MainResources;
+			sourceTree = "<group>";
+		};
+		3EF9CCCD261BC778001E6ABD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3EF9CCCE261BC7A4001E6ABD /* LoginViewController.swift */,
+				3EF9CCD0261BC7DC001E6ABD /* RegisterViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,8 +346,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF9CCCF261BC7A4001E6ABD /* LoginViewController.swift in Sources */,
 				3E4776DF261A944B002AA368 /* ViewController.swift in Sources */,
 				3E4776DD261A944A002AA368 /* AppDelegate.swift in Sources */,
+				3EF9CCD1261BC7DC001E6ABD /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
