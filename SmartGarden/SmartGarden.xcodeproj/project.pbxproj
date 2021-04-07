@@ -27,6 +27,10 @@
 		3E477723261AA9A9002AA368 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47771C261AA9A8002AA368 /* help.png */; };
 		3E477724261AA9A9002AA368 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47771D261AA9A9002AA368 /* mail.png */; };
 		3E477725261AA9A9002AA368 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47771E261AA9A9002AA368 /* profile.png */; };
+		3EC91AD4261D291F00B5A490 /* e_Nexus_logo 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EC91AD3261D291F00B5A490 /* e_Nexus_logo 1.png */; };
+		3EE8C44A261CE191005E110E /* GardensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE8C449261CE191005E110E /* GardensViewController.swift */; };
+		3EE8C44C261D0BB0005E110E /* hamburguermenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE8C44B261D0BAF005E110E /* hamburguermenu.png */; };
+		3EE8C44E261D15AF005E110E /* PlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE8C44D261D15AF005E110E /* PlantsViewController.swift */; };
 		3EF9CCCF261BC7A4001E6ABD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF9CCCE261BC7A4001E6ABD /* LoginViewController.swift */; };
 		3EF9CCD1261BC7DC001E6ABD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF9CCD0261BC7DC001E6ABD /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
@@ -75,6 +79,10 @@
 		3E47771C261AA9A8002AA368 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
 		3E47771D261AA9A9002AA368 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
 		3E47771E261AA9A9002AA368 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		3EC91AD3261D291F00B5A490 /* e_Nexus_logo 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "e_Nexus_logo 1.png"; path = "../../../Resources/e_Nexus_logo 1.png"; sourceTree = "<group>"; };
+		3EE8C449261CE191005E110E /* GardensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardensViewController.swift; sourceTree = "<group>"; };
+		3EE8C44B261D0BAF005E110E /* hamburguermenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburguermenu.png; sourceTree = "<group>"; };
+		3EE8C44D261D15AF005E110E /* PlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewController.swift; sourceTree = "<group>"; };
 		3EF9CCCE261BC7A4001E6ABD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3EF9CCD0261BC7DC001E6ABD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,6 +168,8 @@
 		3E477716261A96F1002AA368 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3EC91AD3261D291F00B5A490 /* e_Nexus_logo 1.png */,
+				3EE8C44B261D0BAF005E110E /* hamburguermenu.png */,
 				3E477726261AA9B3002AA368 /* MainResources */,
 				3E477717261A970B002AA368 /* Launch */,
 				3E47770D261A96DF002AA368 /* image 7.png */,
@@ -198,6 +208,8 @@
 			children = (
 				3EF9CCCE261BC7A4001E6ABD /* LoginViewController.swift */,
 				3EF9CCD0261BC7DC001E6ABD /* RegisterViewController.swift */,
+				3EE8C449261CE191005E110E /* GardensViewController.swift */,
+				3EE8C44D261D15AF005E110E /* PlantsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -316,10 +328,12 @@
 				3E477713261A96DF002AA368 /* image 7.png in Resources */,
 				3E477712261A96DF002AA368 /* image 12.png in Resources */,
 				3E477715261A96DF002AA368 /* image 1.png in Resources */,
+				3EE8C44C261D0BB0005E110E /* hamburguermenu.png in Resources */,
 				3E477722261AA9A9002AA368 /* pass.png in Resources */,
 				3E477724261AA9A9002AA368 /* mail.png in Resources */,
 				3E477714261A96DF002AA368 /* image 4.png in Resources */,
 				3E4776E2261A944B002AA368 /* Main.storyboard in Resources */,
+				3EC91AD4261D291F00B5A490 /* e_Nexus_logo 1.png in Resources */,
 				3E477711261A96DF002AA368 /* image 8.png in Resources */,
 				3E477725261AA9A9002AA368 /* profile.png in Resources */,
 			);
@@ -346,9 +360,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EE8C44A261CE191005E110E /* GardensViewController.swift in Sources */,
 				3EF9CCCF261BC7A4001E6ABD /* LoginViewController.swift in Sources */,
 				3E4776DF261A944B002AA368 /* ViewController.swift in Sources */,
 				3E4776DD261A944A002AA368 /* AppDelegate.swift in Sources */,
+				3EE8C44E261D15AF005E110E /* PlantsViewController.swift in Sources */,
 				3EF9CCD1261BC7DC001E6ABD /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

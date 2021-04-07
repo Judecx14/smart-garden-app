@@ -10,8 +10,18 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet weak var txf_name: UITextField!
+    @IBOutlet weak var txf_mail: UITextField!
+    @IBOutlet weak var txf_passConfirm: UITextField!
+    @IBOutlet weak var txf_pass: UITextField!
+    @IBOutlet weak var txf_lastname: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        txf_name.layer.cornerRadius = 10
+        txf_lastname.layer.cornerRadius = 10
+        txf_mail.layer.cornerRadius = 10
+        txf_pass.layer.cornerRadius = 10
+        txf_passConfirm.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
     
