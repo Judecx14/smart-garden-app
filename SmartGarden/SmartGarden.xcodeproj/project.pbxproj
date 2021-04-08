@@ -29,7 +29,17 @@
 		3E477725261AA9A9002AA368 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47771E261AA9A9002AA368 /* profile.png */; };
 		3EB74BC5261E613300AF0066 /* UsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB74BC4261E613300AF0066 /* UsViewController.swift */; };
 		3EB74BC7261E617C00AF0066 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB74BC6261E617C00AF0066 /* ProfileViewController.swift */; };
+		3EC31E0A261FBA920004510B /* filter-512 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EC31E09261FBA910004510B /* filter-512 3.png */; };
 		3EC91AD4261D291F00B5A490 /* e_Nexus_logo 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EC91AD3261D291F00B5A490 /* e_Nexus_logo 1.png */; };
+		3ECB0831261EA035009DA834 /* maceta 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB082F261EA034009DA834 /* maceta 1.png */; };
+		3ECB0832261EA035009DA834 /* Screenshot_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB0830261EA035009DA834 /* Screenshot_1.png */; };
+		3ECB0836261EA17E009DA834 /* termometro 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB0833261EA17D009DA834 /* termometro 1.png */; };
+		3ECB0837261EA17E009DA834 /* soltar 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB0834261EA17D009DA834 /* soltar 1.png */; };
+		3ECB0838261EA17E009DA834 /* Screenshot_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB0835261EA17D009DA834 /* Screenshot_1.png */; };
+		3ECB083D261EA5F8009DA834 /* camerab 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB0839261EA5F6009DA834 /* camerab 1.png */; };
+		3ECB083E261EA5F8009DA834 /* rega 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB083A261EA5F7009DA834 /* rega 1.png */; };
+		3ECB083F261EA5F8009DA834 /* foco 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB083B261EA5F7009DA834 /* foco 1.png */; };
+		3ECB0840261EA5F8009DA834 /* historyy 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB083C261EA5F7009DA834 /* historyy 1.png */; };
 		3EE8C44A261CE191005E110E /* GardensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE8C449261CE191005E110E /* GardensViewController.swift */; };
 		3EE8C44C261D0BB0005E110E /* hamburguermenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE8C44B261D0BAF005E110E /* hamburguermenu.png */; };
 		3EE8C44E261D15AF005E110E /* PlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE8C44D261D15AF005E110E /* PlantsViewController.swift */; };
@@ -83,7 +93,17 @@
 		3E47771E261AA9A9002AA368 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		3EB74BC4261E613300AF0066 /* UsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsViewController.swift; sourceTree = "<group>"; };
 		3EB74BC6261E617C00AF0066 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3EC31E09261FBA910004510B /* filter-512 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filter-512 3.png"; sourceTree = "<group>"; };
 		3EC91AD3261D291F00B5A490 /* e_Nexus_logo 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "e_Nexus_logo 1.png"; path = "../../../Resources/e_Nexus_logo 1.png"; sourceTree = "<group>"; };
+		3ECB082F261EA034009DA834 /* maceta 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "maceta 1.png"; path = "../../../App_Design_Copy/maceta 1.png"; sourceTree = "<group>"; };
+		3ECB0830261EA035009DA834 /* Screenshot_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Screenshot_1.png; path = ../../../App_Design_Copy/Screenshot_1.png; sourceTree = "<group>"; };
+		3ECB0833261EA17D009DA834 /* termometro 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "termometro 1.png"; path = "../../../App_Design_Copy/termometro 1.png"; sourceTree = "<group>"; };
+		3ECB0834261EA17D009DA834 /* soltar 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "soltar 1.png"; path = "../../../App_Design_Copy/soltar 1.png"; sourceTree = "<group>"; };
+		3ECB0835261EA17D009DA834 /* Screenshot_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Screenshot_1.png; path = ../../../App_Design_Copy/Screenshot_1.png; sourceTree = "<group>"; };
+		3ECB0839261EA5F6009DA834 /* camerab 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camerab 1.png"; sourceTree = "<group>"; };
+		3ECB083A261EA5F7009DA834 /* rega 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rega 1.png"; sourceTree = "<group>"; };
+		3ECB083B261EA5F7009DA834 /* foco 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foco 1.png"; sourceTree = "<group>"; };
+		3ECB083C261EA5F7009DA834 /* historyy 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "historyy 1.png"; sourceTree = "<group>"; };
 		3EE8C449261CE191005E110E /* GardensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardensViewController.swift; sourceTree = "<group>"; };
 		3EE8C44B261D0BAF005E110E /* hamburguermenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburguermenu.png; sourceTree = "<group>"; };
 		3EE8C44D261D15AF005E110E /* PlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +192,12 @@
 		3E477716261A96F1002AA368 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3ECB0841261EA602009DA834 /* Buttons */,
+				3ECB0835261EA17D009DA834 /* Screenshot_1.png */,
+				3ECB0834261EA17D009DA834 /* soltar 1.png */,
+				3ECB0833261EA17D009DA834 /* termometro 1.png */,
+				3ECB082F261EA034009DA834 /* maceta 1.png */,
+				3ECB0830261EA035009DA834 /* Screenshot_1.png */,
 				3EC91AD3261D291F00B5A490 /* e_Nexus_logo 1.png */,
 				3EE8C44B261D0BAF005E110E /* hamburguermenu.png */,
 				3E477726261AA9B3002AA368 /* MainResources */,
@@ -205,6 +231,18 @@
 				3E47771C261AA9A8002AA368 /* help.png */,
 			);
 			path = MainResources;
+			sourceTree = "<group>";
+		};
+		3ECB0841261EA602009DA834 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3EC31E09261FBA910004510B /* filter-512 3.png */,
+				3ECB083A261EA5F7009DA834 /* rega 1.png */,
+				3ECB0839261EA5F6009DA834 /* camerab 1.png */,
+				3ECB083B261EA5F7009DA834 /* foco 1.png */,
+				3ECB083C261EA5F7009DA834 /* historyy 1.png */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		3EF9CCCD261BC778001E6ABD /* Controllers */ = {
@@ -329,17 +367,27 @@
 				3E477721261AA9A9002AA368 /* view.png in Resources */,
 				3E477710261A96DF002AA368 /* image 5.png in Resources */,
 				3E47771F261AA9A9002AA368 /* bkg_sign.png in Resources */,
+				3ECB0837261EA17E009DA834 /* soltar 1.png in Resources */,
+				3ECB0831261EA035009DA834 /* maceta 1.png in Resources */,
 				3E477720261AA9A9002AA368 /* edit.png in Resources */,
 				3E477723261AA9A9002AA368 /* help.png in Resources */,
 				3E477713261A96DF002AA368 /* image 7.png in Resources */,
 				3E477712261A96DF002AA368 /* image 12.png in Resources */,
 				3E477715261A96DF002AA368 /* image 1.png in Resources */,
+				3ECB0836261EA17E009DA834 /* termometro 1.png in Resources */,
+				3ECB083F261EA5F8009DA834 /* foco 1.png in Resources */,
 				3EE8C44C261D0BB0005E110E /* hamburguermenu.png in Resources */,
 				3E477722261AA9A9002AA368 /* pass.png in Resources */,
+				3ECB0832261EA035009DA834 /* Screenshot_1.png in Resources */,
+				3ECB0840261EA5F8009DA834 /* historyy 1.png in Resources */,
 				3E477724261AA9A9002AA368 /* mail.png in Resources */,
 				3E477714261A96DF002AA368 /* image 4.png in Resources */,
 				3E4776E2261A944B002AA368 /* Main.storyboard in Resources */,
+				3ECB083E261EA5F8009DA834 /* rega 1.png in Resources */,
 				3EC91AD4261D291F00B5A490 /* e_Nexus_logo 1.png in Resources */,
+				3ECB083D261EA5F8009DA834 /* camerab 1.png in Resources */,
+				3ECB0838261EA17E009DA834 /* Screenshot_1.png in Resources */,
+				3EC31E0A261FBA920004510B /* filter-512 3.png in Resources */,
 				3E477711261A96DF002AA368 /* image 8.png in Resources */,
 				3E477725261AA9A9002AA368 /* profile.png in Resources */,
 			);
