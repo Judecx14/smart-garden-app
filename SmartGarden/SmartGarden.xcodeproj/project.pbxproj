@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,11 +40,16 @@
 		3ECB083E261EA5F8009DA834 /* rega 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB083A261EA5F7009DA834 /* rega 1.png */; };
 		3ECB083F261EA5F8009DA834 /* foco 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB083B261EA5F7009DA834 /* foco 1.png */; };
 		3ECB0840261EA5F8009DA834 /* historyy 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECB083C261EA5F7009DA834 /* historyy 1.png */; };
+		3EDE26532623C41C00606B96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4776E0261A944B002AA368 /* Main.storyboard */; };
+		3EDE26542623C41E00606B96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4776E0261A944B002AA368 /* Main.storyboard */; };
 		3EE8C44A261CE191005E110E /* GardensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE8C449261CE191005E110E /* GardensViewController.swift */; };
 		3EE8C44C261D0BB0005E110E /* hamburguermenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE8C44B261D0BAF005E110E /* hamburguermenu.png */; };
 		3EE8C44E261D15AF005E110E /* PlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE8C44D261D15AF005E110E /* PlantsViewController.swift */; };
 		3EF9CCCF261BC7A4001E6ABD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF9CCCE261BC7A4001E6ABD /* LoginViewController.swift */; };
 		3EF9CCD1261BC7DC001E6ABD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF9CCD0261BC7DC001E6ABD /* RegisterViewController.swift */; };
+		58785AA40FAB49B8E8141EE9 /* Pods_SmartGarden.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BDC880986605C116B4CFC3 /* Pods_SmartGarden.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		8B06446713B3DB1482BAC585 /* Pods_SmartGarden_SmartGardenUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57898F39FF102620924795E0 /* Pods_SmartGarden_SmartGardenUITests.framework */; };
+		FB29DF65E615970FBEE59BF0 /* Pods_SmartGardenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C818964622CB575599D0A628 /* Pods_SmartGardenTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FDE699DE0D5EC4C949601A4 /* Pods-SmartGarden.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGarden.debug.xcconfig"; path = "Target Support Files/Pods-SmartGarden/Pods-SmartGarden.debug.xcconfig"; sourceTree = "<group>"; };
 		3E4776D9261A944A002AA368 /* SmartGarden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartGarden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4776DC261A944A002AA368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E4776DE261A944B002AA368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +115,14 @@
 		3EE8C44D261D15AF005E110E /* PlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewController.swift; sourceTree = "<group>"; };
 		3EF9CCCE261BC7A4001E6ABD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3EF9CCD0261BC7DC001E6ABD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		52BDC880986605C116B4CFC3 /* Pods_SmartGarden.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartGarden.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57898F39FF102620924795E0 /* Pods_SmartGarden_SmartGardenUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartGarden_SmartGardenUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FF78ADAABFFB6DF92A68683 /* Pods-SmartGardenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGardenTests.release.xcconfig"; path = "Target Support Files/Pods-SmartGardenTests/Pods-SmartGardenTests.release.xcconfig"; sourceTree = "<group>"; };
+		6902486D5984D6A74C8D58AD /* Pods-SmartGarden-SmartGardenUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGarden-SmartGardenUITests.debug.xcconfig"; path = "Target Support Files/Pods-SmartGarden-SmartGardenUITests/Pods-SmartGarden-SmartGardenUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		82C85564B9DE6D99019502DA /* Pods-SmartGarden.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGarden.release.xcconfig"; path = "Target Support Files/Pods-SmartGarden/Pods-SmartGarden.release.xcconfig"; sourceTree = "<group>"; };
+		C818964622CB575599D0A628 /* Pods_SmartGardenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartGardenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2417D931D983D63F8148CD5 /* Pods-SmartGardenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGardenTests.debug.xcconfig"; path = "Target Support Files/Pods-SmartGardenTests/Pods-SmartGardenTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6AD6ECF9BDB4C79522CE9DF /* Pods-SmartGarden-SmartGardenUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGarden-SmartGardenUITests.release.xcconfig"; path = "Target Support Files/Pods-SmartGarden-SmartGardenUITests/Pods-SmartGarden-SmartGardenUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58785AA40FAB49B8E8141EE9 /* Pods_SmartGarden.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB29DF65E615970FBEE59BF0 /* Pods_SmartGardenTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,12 +146,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B06446713B3DB1482BAC585 /* Pods_SmartGarden_SmartGardenUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32A5D8FD8F2B8829E9082892 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FDE699DE0D5EC4C949601A4 /* Pods-SmartGarden.debug.xcconfig */,
+				82C85564B9DE6D99019502DA /* Pods-SmartGarden.release.xcconfig */,
+				6902486D5984D6A74C8D58AD /* Pods-SmartGarden-SmartGardenUITests.debug.xcconfig */,
+				F6AD6ECF9BDB4C79522CE9DF /* Pods-SmartGarden-SmartGardenUITests.release.xcconfig */,
+				D2417D931D983D63F8148CD5 /* Pods-SmartGardenTests.debug.xcconfig */,
+				5FF78ADAABFFB6DF92A68683 /* Pods-SmartGardenTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3E4776D0261A944A002AA368 = {
 			isa = PBXGroup;
 			children = (
@@ -143,8 +173,11 @@
 				3E4776F0261A944D002AA368 /* SmartGardenTests */,
 				3E4776FB261A944D002AA368 /* SmartGardenUITests */,
 				3E4776DA261A944A002AA368 /* Products */,
+				32A5D8FD8F2B8829E9082892 /* Pods */,
+				AD2F48F0649333212B8646A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		3E4776DA261A944A002AA368 /* Products */ = {
 			isa = PBXGroup;
@@ -258,6 +291,16 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		AD2F48F0649333212B8646A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52BDC880986605C116B4CFC3 /* Pods_SmartGarden.framework */,
+				57898F39FF102620924795E0 /* Pods_SmartGarden_SmartGardenUITests.framework */,
+				C818964622CB575599D0A628 /* Pods_SmartGardenTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,9 +308,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E477701261A944E002AA368 /* Build configuration list for PBXNativeTarget "SmartGarden" */;
 			buildPhases = (
+				391C3CEAA8C33212C5A5E4AD /* [CP] Check Pods Manifest.lock */,
 				3E4776D5261A944A002AA368 /* Sources */,
 				3E4776D6261A944A002AA368 /* Frameworks */,
 				3E4776D7261A944A002AA368 /* Resources */,
+				EB814FE0EA60D7230BCEE398 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,6 +327,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E477704261A944E002AA368 /* Build configuration list for PBXNativeTarget "SmartGardenTests" */;
 			buildPhases = (
+				FEF7F61781ACBE9D4C58B923 /* [CP] Check Pods Manifest.lock */,
 				3E4776E9261A944D002AA368 /* Sources */,
 				3E4776EA261A944D002AA368 /* Frameworks */,
 				3E4776EB261A944D002AA368 /* Resources */,
@@ -300,9 +346,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E477707261A944E002AA368 /* Build configuration list for PBXNativeTarget "SmartGardenUITests" */;
 			buildPhases = (
+				51F61803B7F1034DC7578F20 /* [CP] Check Pods Manifest.lock */,
 				3E4776F4261A944D002AA368 /* Sources */,
 				3E4776F5261A944D002AA368 /* Frameworks */,
 				3E4776F6261A944D002AA368 /* Resources */,
+				6A7DFE9D111511CC69486273 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -397,6 +445,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EDE26542623C41E00606B96 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,10 +453,114 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EDE26532623C41C00606B96 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		391C3CEAA8C33212C5A5E4AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartGarden-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51F61803B7F1034DC7578F20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartGarden-SmartGardenUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A7DFE9D111511CC69486273 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartGarden-SmartGardenUITests/Pods-SmartGarden-SmartGardenUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartGarden-SmartGardenUITests/Pods-SmartGarden-SmartGardenUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartGarden-SmartGardenUITests/Pods-SmartGarden-SmartGardenUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB814FE0EA60D7230BCEE398 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartGarden/Pods-SmartGarden-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartGarden/Pods-SmartGarden-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartGarden/Pods-SmartGarden-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEF7F61781ACBE9D4C58B923 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartGardenTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3E4776D5261A944A002AA368 /* Sources */ = {
@@ -594,6 +747,7 @@
 		};
 		3E477702261A944E002AA368 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FDE699DE0D5EC4C949601A4 /* Pods-SmartGarden.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -611,6 +765,7 @@
 		};
 		3E477703261A944E002AA368 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82C85564B9DE6D99019502DA /* Pods-SmartGarden.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -628,6 +783,7 @@
 		};
 		3E477705261A944E002AA368 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2417D931D983D63F8148CD5 /* Pods-SmartGardenTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -648,6 +804,7 @@
 		};
 		3E477706261A944E002AA368 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FF78ADAABFFB6DF92A68683 /* Pods-SmartGardenTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -668,6 +825,7 @@
 		};
 		3E477708261A944E002AA368 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6902486D5984D6A74C8D58AD /* Pods-SmartGarden-SmartGardenUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -687,6 +845,7 @@
 		};
 		3E477709261A944E002AA368 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6AD6ECF9BDB4C79522CE9DF /* Pods-SmartGarden-SmartGardenUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

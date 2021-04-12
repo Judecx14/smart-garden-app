@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class RegisterViewController: UIViewController {
 
@@ -24,16 +25,17 @@ class RegisterViewController: UIViewController {
         txf_passConfirm.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func regist(_ sender: Any) {
+        self.registerUser()
     }
-    */
-
+    func registerUser(){
+        let nick = txf_name.text
+        let mail = txf_mail.text
+        let pass = txf_pass.text
+        Alamofire.request("http://127.0.0.1:3333/register",method: .post, parameters: ["username":nick!,"email":mail!,"password":pass!], encoding: JSONEncoding.default).responseJSON{(response) -> Void in
+            if let JSON = response.result.value{
+                print(JSON)
+            }
+        }
+    }
 }

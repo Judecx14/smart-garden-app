@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginViewController: UIViewController {
 
@@ -18,15 +19,31 @@ class LoginViewController: UIViewController {
         txf_mail.layer.cornerRadius = 10
         txf_pass.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
+        self.request5()
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func request(){
+        Alamofire.request("https://jsonplaceholder.typicode.com/posts/1", method: .get).responseJSON{(response) -> Void in
+            if let JSON = response.result.value{
+            print(JSON)
+            }
+        }
     }
-    */
-
+    func request2(){
+        Alamofire.request("https://jsonplaceholder.typicode.com/posts/", method: .get, parameters: ["id":90], encoding: URLEncoding.default).responseJSON(){response in debugPrint(response)
+        }
+    }
+    func request3(){
+        Alamofire.request("https://jsonplaceholder.typicode.com/posts/1", method: .get).responseJSON(){response in debugPrint(response)
+        }
+    }
+    func request4(){
+        Alamofire.request("https://jsonplaceholder.typicode.com/posts/1",method: .get).response(){response in debugPrint(response)}
+    }
+    func request5(){
+        Alamofire.request("https://jsonplaceholder.typicode.com/posts/",method: .get, parameters: ["id":3], encoding: URLEncoding.httpBody).responseJSON{(response) -> Void in
+            if let JSON = response.result.value{
+                print(JSON)
+            }
+        }
+    }
 }
