@@ -28,6 +28,7 @@ class RegisterViewController: UIViewController {
     @IBAction func regist(_ sender: Any) {
         self.verify()
     }
+//Metodo para verificar datos
     func verify(){
         debugPrint("Presionado")
         let txfName = txf_name.text!
@@ -35,7 +36,7 @@ class RegisterViewController: UIViewController {
         let txfMail = txf_mail.text!
         let txfPass = txf_pass.text!
         let txfPassConfirm = txf_passConfirm.text!
-        
+//Verificar que los datos no esten vacios
         if txfName.isEmpty || txfMail.isEmpty || txfPass.isEmpty{
             let alertEmptyString = UIAlertController(title: "Faltan Datos", message: "Alguno de los campos estan vacios", preferredStyle: .alert)
             alertEmptyString.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(alertAction) in alertEmptyString.dismiss(animated: true, completion: nil)}))
@@ -47,11 +48,13 @@ class RegisterViewController: UIViewController {
             txf_passConfirm.shake()
             debugPrint("Llegue hasta donde fallo porque no hay datos")
         }
+//Verificar que los datos de registro esten completos y correctos
         else if txfPass == txfPassConfirm{
             self.registerUser()
-            self.performSegue(withIdentifier: "xCosa2", sender: nil)
+            self.performSegue(withIdentifier: "RegisterSuccessfull", sender: nil)
             debugPrint("Llegue hasta que todo funciono")
         }
+//Verificar que las contraseñas sean iguales
         else if txfPass != txfPassConfirm{
             let alertDifferentePassword = UIAlertController(title: "Las contraseñas no coinciden", message: "Las contraseñas ingresadas no coinciden, no son iguales", preferredStyle: .alert)
             alertDifferentePassword.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(alertAction) in alertDifferentePassword.dismiss(animated: true, completion: nil)}))
@@ -62,6 +65,7 @@ class RegisterViewController: UIViewController {
         }
         
     }
+//Peticion HTTP para registrar usuario
     func registerUser(){
         let nick = txf_name.text
         let mail = txf_mail.text

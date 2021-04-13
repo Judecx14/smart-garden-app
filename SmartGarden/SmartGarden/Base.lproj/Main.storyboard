@@ -68,7 +68,6 @@
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="Login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ra-4F-rSh"/>
-                                                            <segue destination="fxn-Aw-ECV" kind="show" id="CVB-SZ-d43"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0U-Yw-e00">
@@ -77,7 +76,8 @@
                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="6Ue-RZ-dbp" kind="modal" id="2oY-vv-S18"/>
+                                                            <action selector="pushRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ANF-5K-V4H"/>
+                                                            <segue destination="6Ue-RZ-dbp" kind="modal" identifier="GoToRegister" id="2oY-vv-S18"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -162,6 +162,7 @@
                     <connections>
                         <outlet property="txf_mail" destination="Bf1-c0-5f7" id="zD0-vL-Afz"/>
                         <outlet property="txf_pass" destination="ejn-rG-gn0" id="s6q-ly-MeA"/>
+                        <segue destination="fxn-Aw-ECV" kind="show" identifier="LoginSuccessfull" id="J45-xE-ayY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -305,7 +306,7 @@
                         <outlet property="txf_name" destination="SKq-eO-fIB" id="6yj-6x-BaH"/>
                         <outlet property="txf_pass" destination="ygX-WJ-vZd" id="EJu-zd-JcS"/>
                         <outlet property="txf_passConfirm" destination="AIN-iZ-Qt1" id="Fv9-9S-WtG"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="xCosa2" id="tbE-A9-b4F"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="RegisterSuccessfull" id="tbE-A9-b4F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oDR-0J-T3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1414,6 +1415,7 @@
         <image name="termometro 1.png" width="63" height="63"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="2oY-vv-S18"/>
         <segue reference="EBp-7e-CeX"/>
         <segue reference="r7X-w4-8de"/>
         <segue reference="tbE-A9-b4F"/>

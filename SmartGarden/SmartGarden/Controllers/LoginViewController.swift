@@ -23,16 +23,21 @@ class LoginViewController: UIViewController {
     @IBAction func Login(_ sender: Any) {
         self.verify()
     }
+    @IBAction func pushRegister(_ sender: Any) {
+        self.performSegue(withIdentifier: "GoToRegister", sender: nil)
+    }
     func verify(){
         let txfmail = txf_mail.text!
         let txfpass = txf_pass.text!
+//Verificar que los campos no esten vacios
         if txfmail.isEmpty || txfpass.isEmpty{
             let alertEmptyString = UIAlertController(title: "Faltan Datos", message: "Alguno de los campos estan vacios", preferredStyle: .alert)
             alertEmptyString.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(alertAction) in alertEmptyString.dismiss(animated: true, completion: nil)}))
             self.present(alertEmptyString, animated: true, completion: nil)
         }
-        else{
-            debugPrint("Hola")
+//Datos de login correctos
+        else if txfmail == txfpass{
+            self.performSegue(withIdentifier: "LoginSuccessfull", sender: nil)
         }
     }
 }
