@@ -32,12 +32,12 @@ class RegisterViewController: UIViewController {
     func verify(){
         debugPrint("Presionado")
         let txfName = txf_name.text!
-        //let txfLastName = txf_lastname.text!
+        let txfLastName = txf_lastname.text!
         let txfMail = txf_mail.text!
         let txfPass = txf_pass.text!
         let txfPassConfirm = txf_passConfirm.text!
 //Verificar que los datos no esten vacios
-        if txfName.isEmpty || txfMail.isEmpty || txfPass.isEmpty{
+        if txfName.isEmpty || txfMail.isEmpty || txfPass.isEmpty || txfLastName.isEmpty{
             let alertEmptyString = UIAlertController(title: "Faltan Datos", message: "Alguno de los campos estan vacios", preferredStyle: .alert)
             alertEmptyString.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(alertAction) in alertEmptyString.dismiss(animated: true, completion: nil)}))
             self.present(alertEmptyString, animated: true, completion: nil)
@@ -68,9 +68,10 @@ class RegisterViewController: UIViewController {
 //Peticion HTTP para registrar usuario
     func registerUser(){
         let nick = txf_name.text
+        let last = txf_lastname.text
         let mail = txf_mail.text
         let pass = txf_pass.text
-        Alamofire.request("http://127.0.0.1:3333/register",method: .post, parameters: ["username":nick!,"email":mail!,"password":pass!], encoding: JSONEncoding.default).responseJSON{(response) -> Void in
+        Alamofire.request("https://smart-garden-api-v12.herokuapp.com/register",method: .post, parameters: ["name":nick!,"lastname":last!,"email":mail!,"password":pass!], encoding: JSONEncoding.default).responseJSON{(response) -> Void in
             if let JSON = response.result.value{
                 print(JSON)
             }
