@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W6q-8d-Fan">
-                                <rect key="frame" x="0.0" y="88" width="414" height="868"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="912"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w3o-70-Ahl" userLabel="ContentScrollView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="952"/>
@@ -67,7 +67,8 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <segue destination="fxn-Aw-ECV" kind="presentation" id="HGs-qz-Kdj"/>
+                                                            <action selector="Login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ra-4F-rSh"/>
+                                                            <segue destination="fxn-Aw-ECV" kind="show" id="CVB-SZ-d43"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0U-Yw-e00">
@@ -76,7 +77,7 @@
                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="6Ue-RZ-dbp" kind="show" id="2oY-vv-S18"/>
+                                                            <segue destination="6Ue-RZ-dbp" kind="modal" id="2oY-vv-S18"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -176,7 +177,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22R-vX-doS">
-                                <rect key="frame" x="0.0" y="88" width="414" height="1008"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="1052"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63p-Zp-LJO">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1052"/>
@@ -250,7 +251,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="regist:" destination="6Ue-RZ-dbp" eventType="touchUpInside" id="uFc-nN-hOb"/>
-                                                    <segue destination="fxn-Aw-ECV" kind="presentation" id="KnL-aD-NtN"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -305,6 +305,7 @@
                         <outlet property="txf_name" destination="SKq-eO-fIB" id="6yj-6x-BaH"/>
                         <outlet property="txf_pass" destination="ygX-WJ-vZd" id="EJu-zd-JcS"/>
                         <outlet property="txf_passConfirm" destination="AIN-iZ-Qt1" id="Fv9-9S-WtG"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="xCosa2" id="tbE-A9-b4F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oDR-0J-T3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1413,8 +1414,8 @@
         <image name="termometro 1.png" width="63" height="63"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KnL-aD-NtN"/>
         <segue reference="EBp-7e-CeX"/>
         <segue reference="r7X-w4-8de"/>
+        <segue reference="tbE-A9-b4F"/>
     </inferredMetricsTieBreakers>
 </document>

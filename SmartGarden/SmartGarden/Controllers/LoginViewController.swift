@@ -19,31 +19,20 @@ class LoginViewController: UIViewController {
         txf_mail.layer.cornerRadius = 10
         txf_pass.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
-        self.request5()
     }
-    func request(){
-        Alamofire.request("https://jsonplaceholder.typicode.com/posts/1", method: .get).responseJSON{(response) -> Void in
-            if let JSON = response.result.value{
-            print(JSON)
-            }
+    @IBAction func Login(_ sender: Any) {
+        self.verify()
+    }
+    func verify(){
+        let txfmail = txf_mail.text!
+        let txfpass = txf_pass.text!
+        if txfmail.isEmpty || txfpass.isEmpty{
+            let alertEmptyString = UIAlertController(title: "Faltan Datos", message: "Alguno de los campos estan vacios", preferredStyle: .alert)
+            alertEmptyString.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(alertAction) in alertEmptyString.dismiss(animated: true, completion: nil)}))
+            self.present(alertEmptyString, animated: true, completion: nil)
         }
-    }
-    func request2(){
-        Alamofire.request("https://jsonplaceholder.typicode.com/posts/", method: .get, parameters: ["id":90], encoding: URLEncoding.default).responseJSON(){response in debugPrint(response)
-        }
-    }
-    func request3(){
-        Alamofire.request("https://jsonplaceholder.typicode.com/posts/1", method: .get).responseJSON(){response in debugPrint(response)
-        }
-    }
-    func request4(){
-        Alamofire.request("https://jsonplaceholder.typicode.com/posts/1",method: .get).response(){response in debugPrint(response)}
-    }
-    func request5(){
-        Alamofire.request("https://jsonplaceholder.typicode.com/posts/",method: .get, parameters: ["id":3], encoding: URLEncoding.httpBody).responseJSON{(response) -> Void in
-            if let JSON = response.result.value{
-                print(JSON)
-            }
+        else{
+            debugPrint("Hola")
         }
     }
 }

@@ -27,6 +27,7 @@
 		3E477723261AA9A9002AA368 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47771C261AA9A8002AA368 /* help.png */; };
 		3E477724261AA9A9002AA368 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47771D261AA9A9002AA368 /* mail.png */; };
 		3E477725261AA9A9002AA368 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47771E261AA9A9002AA368 /* profile.png */; };
+		3E9CF7C72625027600011AFF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9CF7C62625027600011AFF /* Extensions.swift */; };
 		3EB74BC5261E613300AF0066 /* UsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB74BC4261E613300AF0066 /* UsViewController.swift */; };
 		3EB74BC7261E617C00AF0066 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB74BC6261E617C00AF0066 /* ProfileViewController.swift */; };
 		3EC31E0A261FBA920004510B /* filter-512 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EC31E09261FBA910004510B /* filter-512 3.png */; };
@@ -97,6 +98,7 @@
 		3E47771C261AA9A8002AA368 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
 		3E47771D261AA9A9002AA368 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
 		3E47771E261AA9A9002AA368 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		3E9CF7C62625027600011AFF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3EB74BC4261E613300AF0066 /* UsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsViewController.swift; sourceTree = "<group>"; };
 		3EB74BC6261E617C00AF0066 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3EC31E09261FBA910004510B /* filter-512 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filter-512 3.png"; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				3E4776E3261A944D002AA368 /* Assets.xcassets */,
 				3E4776E5261A944D002AA368 /* LaunchScreen.storyboard */,
 				3E4776E8261A944D002AA368 /* Info.plist */,
+				3E9CF7C62625027600011AFF /* Extensions.swift */,
 			);
 			path = SmartGarden;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EE8C44A261CE191005E110E /* GardensViewController.swift in Sources */,
+				3E9CF7C72625027600011AFF /* Extensions.swift in Sources */,
 				3EF9CCCF261BC7A4001E6ABD /* LoginViewController.swift in Sources */,
 				3E4776DF261A944B002AA368 /* ViewController.swift in Sources */,
 				3EB74BC5261E613300AF0066 /* UsViewController.swift in Sources */,
