@@ -34,9 +34,16 @@ class LoginViewController: UIViewController {
             let alertEmptyString = UIAlertController(title: "Faltan Datos", message: "Alguno de los campos estan vacios", preferredStyle: .alert)
             alertEmptyString.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(alertAction) in alertEmptyString.dismiss(animated: true, completion: nil)}))
             self.present(alertEmptyString, animated: true, completion: nil)
+            debugPrint("No funciono login")
+            return
         }
 //Datos de login correctos
-        else if txfmail == txfpass{
+        else{
+            Alamofire.request("https://smart-garden-api-v12.herokuapp.com/login", method: .post, parameters: ["email":txfmail,"password":txfpass], encoding: JSONEncoding.default).responseJSON{(array_respuesta) in
+                if let JSON = array_respuesta.result.value{
+                    print(JSON)
+                }
+            }
             self.performSegue(withIdentifier: "LoginSuccessfull", sender: nil)
         }
     }
