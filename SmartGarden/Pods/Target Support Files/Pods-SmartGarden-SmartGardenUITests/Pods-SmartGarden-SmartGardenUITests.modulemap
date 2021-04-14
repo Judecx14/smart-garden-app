@@ -1,6 +1,0 @@
-framework module Pods_SmartGarden_SmartGardenUITests {
-  umbrella header "Pods-SmartGarden-SmartGardenUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

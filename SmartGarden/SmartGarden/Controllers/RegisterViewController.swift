@@ -16,6 +16,9 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var txf_passConfirm: UITextField!
     @IBOutlet weak var txf_pass: UITextField!
     @IBOutlet weak var txf_lastname: UITextField!
+    
+    //let users = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         txf_name.layer.cornerRadius = 10

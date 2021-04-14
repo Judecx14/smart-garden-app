@@ -7,15 +7,6 @@ target 'SmartGarden' do
 
   # Pods for SmartGarden
 
-  pod 'Alamofire', '~> 4.9.1'
-
-  target 'SmartGardenTests' do
-  	inherit! :search_paths
-  	# Pods for testing
-  end
-
-  target 'SmartGardenUITests' do
-  	# Pods for testing
-  end
+  pod 'Alamofire', '~> 4.8.2'
   
 end

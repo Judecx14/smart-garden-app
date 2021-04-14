@@ -9,7 +9,15 @@
 import Foundation
 
 struct User: Decodable{
-    let username: String
+    let name: String
+    let lastname:String
     let email: String
     let password: String
+    
+    init(_ name:String, _ lastname:String, _ email:String, _ password:String) {
+        self.name=name
+        self.lastname=lastname
+        self.email=email
+        self.password=password
+    }
 }

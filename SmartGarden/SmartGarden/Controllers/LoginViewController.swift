@@ -13,6 +13,9 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var txf_mail: UITextField!
     @IBOutlet weak var txf_pass: UITextField!
+    
+    let token = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Login"
@@ -39,12 +42,22 @@ class LoginViewController: UIViewController {
         }
 //Datos de login correctos
         else{
-            Alamofire.request("https://smart-garden-api-v12.herokuapp.com/login", method: .post, parameters: ["email":txfmail,"password":txfpass], encoding: JSONEncoding.default).responseJSON{(array_respuesta) in
-                if let JSON = array_respuesta.result.value{
-                    print(JSON)
+            Alamofire.request("https://smart-garden-api-v12.herokuapp.com/login", method: .post, parameters: ["email":txfmail,"password":txfpass]).responseData { (response) in
+                do {
+                    guard let data = response.value else { return }
+                    let decoder = JSONDecoder()
+                    let auth = try decoder.decode(Auth.self, from: data)
+                    print(auth.token)
+                    print("Holaaa")
+                    print(auth)
+                    self.performSegue(withIdentifier: "LoginSuccessfull", sender: nil)
+                }catch {
+                    print("Error en la serializacion \(error):")
+                    let alertWrongLogin = UIAlertController(title: "Error de Login", message: "Verifica que los datos sean correctos", preferredStyle: .alert)
+                    alertWrongLogin.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(alertAction) in alertWrongLogin.dismiss(animated: true, completion: nil)}))
+                    self.present(alertWrongLogin, animated: true, completion: nil)
                 }
             }
-            self.performSegue(withIdentifier: "LoginSuccessfull", sender: nil)
         }
     }
 }

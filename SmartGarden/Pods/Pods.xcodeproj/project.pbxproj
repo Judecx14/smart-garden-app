@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0C5E11DE24DAA737704B355F5F2F3426 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D01BA8472F25D39F718F71557EDC8DD /* ParameterEncoding.swift */; };
-		0F2729D9158D8C09EA30DDFADD143484 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		132E0F619E4338E5D1B27E4C72076B3F /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06639F7A76DB8A9D0D0E41CDD7A6684 /* Notifications.swift */; };
 		1945CD5D63A1C164AEAAA9A33E85571E /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 341BDAD0026CDA8E7BCE35AC122E1C8C /* Alamofire-dummy.m */; };
 		1986B50C74F1697EA43F68335C93CEB3 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE3D7EDCA41F256D471B40BBFD3FCE /* MultipartFormData.swift */; };
@@ -17,35 +16,23 @@
 		50013C33D35EBAF31ACF3A8B3A9A3FB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		53791F5E5F07400F92CFDFC89A432305 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33115EC2A5164913C68F8BD170389EEE /* Validation.swift */; };
 		64744C911253C3E01461FAD7C935C8D7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD807F155301ECA538A2C1C296E1186D /* Result.swift */; };
-		798A597C0432E78C8D74254CE18D20FA /* Pods-SmartGarden-SmartGardenUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F710FFBADE8A05416FEA79A437D84D8 /* Pods-SmartGarden-SmartGardenUITests-dummy.m */; };
 		83956E20859CDBBE7BC38ABADE0170FB /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A0E300C04A6DF88D620788FE38780 /* AFError.swift */; };
-		86F06FEB421DAF4E11F2882A3D701579 /* Pods-SmartGarden-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3973FE537B1F0B161CD36638F2932D7 /* Pods-SmartGarden-dummy.m */; };
+		86F06FEB421DAF4E11F2882A3D701579 /* Pods-SmartGarden-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A33E1E69BC9941698B92F1B463BA9BD1 /* Pods-SmartGarden-dummy.m */; };
 		931BBB8230A25161D5C37528A8F9FECF /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7E25E371731FAE44F46A9F392CB5D5 /* SessionManager.swift */; };
 		933FDA5970AA525D6CB92BFEBA2BAB4A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB5272AD01ECD0B09A86818A7754C4 /* Timeline.swift */; };
-		96CAB480C393243CBD4C0C4359998E5F /* Pods-SmartGardenTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1B9C4045AB0A308E35F27DD76D8436 /* Pods-SmartGardenTests-dummy.m */; };
 		98A929C8E9012AB167672714FFD2113C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D59E1AD3CC394A93392FF3DC8CF2961 /* Request.swift */; };
 		AFC64B1097F7355FF423D6A73E9C7210 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C759635F88377BD7E2DEDE04C23C62 /* TaskDelegate.swift */; };
-		B6CF84C704BFE3BF8879B17A5775D372 /* Pods-SmartGarden-SmartGardenUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D81D709A319312587BDBA8F42D01DA90 /* Pods-SmartGarden-SmartGardenUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEE6B677416CA71C981D1D3F60B18C96 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C15C076B531E2E7744C358418A0C0B5 /* Alamofire.swift */; };
-		C811FE86F3238615467AC102956D3845 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		D3D8C379C6E4FB487E5ABD6800AD7B7E /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7F7716086D54E6308EE52C8227B87 /* DispatchQueue+Alamofire.swift */; };
 		D65C254F5ABF2CB5ECEE50FE8F8E1A80 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC6858C85690F7AFEA7F6542EE9A69A /* Response.swift */; };
-		E2EEA35529E212E6F5714B05CAF2583F /* Pods-SmartGarden-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89177F161B253E05E0F3D43FC86C5DE6 /* Pods-SmartGarden-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2EEA35529E212E6F5714B05CAF2583F /* Pods-SmartGarden-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E1FF8EE937B1C728725CCF1F53309B9 /* Pods-SmartGarden-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3747EC31FCCA97D75A81FC700CF7E24 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B03859BDC36782899379E222720A297 /* ResponseSerialization.swift */; };
 		E60A27DA8696BB692FE73CACA8930014 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		F13F2AA7F2E6D95A181CAB99B900D531 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4453BE339B79900FDC53E34FE5589CB /* ServerTrustPolicy.swift */; };
-		F1A7D987B3B2F097AC1D99BDCE64AE2D /* Pods-SmartGardenTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC168D627046C1500C0E8299835EEBEC /* Pods-SmartGardenTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7B74645E07C39771156A1FA413B98D4 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D54AEF5647A987180EDAD7E1CEF7387B /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		67386F67ED5FE442994B48FEB315BDDF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
-			remoteInfo = Alamofire;
-		};
 		A343E2C5B343AFF32ADD1B122B178E05 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -53,71 +40,45 @@
 			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
 			remoteInfo = Alamofire;
 		};
-		DDD48FD5D987AF61F3CE89D4875F6723 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3A2D3206A98B136009F6879068441A22;
-			remoteInfo = "Pods-SmartGarden";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0699628325144A320194459FDEA20510 /* Pods-SmartGarden-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartGarden-frameworks.sh"; sourceTree = "<group>"; };
-		0CE03D286F4905DE3CA16D08E399D628 /* Pods_SmartGardenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmartGardenTests.framework; path = "Pods-SmartGardenTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D01BA8472F25D39F718F71557EDC8DD /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		13763D34383E5EA7B45D669BCD72313F /* Pods-SmartGardenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartGardenTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C15C076B531E2E7744C358418A0C0B5 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		2377FD5551A477429E3221FBD9308C23 /* Pods-SmartGarden.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartGarden.debug.xcconfig"; sourceTree = "<group>"; };
+		29DBD98CAF8963125CF884425C87F2AB /* Pods-SmartGarden-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartGarden-frameworks.sh"; sourceTree = "<group>"; };
 		32DB5272AD01ECD0B09A86818A7754C4 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		33115EC2A5164913C68F8BD170389EEE /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		341BDAD0026CDA8E7BCE35AC122E1C8C /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		3D7E25E371731FAE44F46A9F392CB5D5 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		3F644498EF5BF2E7FC0C4AE807B10D80 /* Pods-SmartGarden-SmartGardenUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmartGarden-SmartGardenUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4A1B9C4045AB0A308E35F27DD76D8436 /* Pods-SmartGardenTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmartGardenTests-dummy.m"; sourceTree = "<group>"; };
-		4EA0029168CAB588B719A9652D7DD498 /* Pods-SmartGarden-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmartGarden-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4E1FF8EE937B1C728725CCF1F53309B9 /* Pods-SmartGarden-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmartGarden-umbrella.h"; sourceTree = "<group>"; };
+		5A60106183D4C4533304B4EC98D65263 /* Pods-SmartGarden.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartGarden.release.xcconfig"; sourceTree = "<group>"; };
 		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6469882C868B67250D3A03B6C6CFFB77 /* Pods-SmartGardenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartGardenTests.release.xcconfig"; sourceTree = "<group>"; };
-		6C2682E72037F1CC4E153A13A306314A /* Pods-SmartGarden-SmartGardenUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartGarden-SmartGardenUITests-Info.plist"; sourceTree = "<group>"; };
-		70EC4DCCD8DE4D7EB3ED76129506246D /* Pods-SmartGardenTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartGardenTests-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		75C759635F88377BD7E2DEDE04C23C62 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		7B03859BDC36782899379E222720A297 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		7F621A9DCE978D62E3479548D41B39A2 /* Pods-SmartGarden-SmartGardenUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartGarden-SmartGardenUITests-frameworks.sh"; sourceTree = "<group>"; };
-		7F710FFBADE8A05416FEA79A437D84D8 /* Pods-SmartGarden-SmartGardenUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmartGarden-SmartGardenUITests-dummy.m"; sourceTree = "<group>"; };
-		89177F161B253E05E0F3D43FC86C5DE6 /* Pods-SmartGarden-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmartGarden-umbrella.h"; sourceTree = "<group>"; };
+		823BD58F5C448FE1C0F53B4836DB8A32 /* Pods-SmartGarden-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartGarden-acknowledgements.plist"; sourceTree = "<group>"; };
 		8967C2294EC415AB3E3370341A5ED7B0 /* Pods_SmartGarden.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmartGarden.framework; path = "Pods-SmartGarden.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A7B6507A040C70D16E1398588376A3E /* Pods-SmartGardenTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartGardenTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8D5A0E300C04A6DF88D620788FE38780 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		92EEF71BF7E05CBF6A0E10E0920F0418 /* Pods-SmartGardenTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmartGardenTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		985417470B9341C92A5160D4B2FF2B08 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		9CE31F779E1334FE76060F7DB573CDE4 /* Pods-SmartGarden-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmartGarden-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D59E1AD3CC394A93392FF3DC8CF2961 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1771A4D38453509A92E138DB68CBF1A /* Pods-SmartGarden.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartGarden.debug.xcconfig"; sourceTree = "<group>"; };
-		AB4D524AFF52C963632185CEB6DF7336 /* Pods_SmartGarden_SmartGardenUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmartGarden_SmartGardenUITests.framework; path = "Pods-SmartGarden-SmartGardenUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33E1E69BC9941698B92F1B463BA9BD1 /* Pods-SmartGarden-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmartGarden-dummy.m"; sourceTree = "<group>"; };
 		AD8710F26B62AABFF387E9CA4F6899A4 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		AFF7F7716086D54E6308EE52C8227B87 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		B06639F7A76DB8A9D0D0E41CDD7A6684 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		B3F6A54BE4BA9EB8CE8FCC490C04B7B5 /* Pods-SmartGardenTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SmartGardenTests.modulemap"; sourceTree = "<group>"; };
 		BFCE3D7EDCA41F256D471B40BBFD3FCE /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		C3C01BFF16735CF5A023E97A2E3A25F5 /* Pods-SmartGarden-SmartGardenUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartGarden-SmartGardenUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C4453BE339B79900FDC53E34FE5589CB /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		C759A2A4745DAD687E6BF42F3A7729D2 /* Pods-SmartGarden-SmartGardenUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SmartGarden-SmartGardenUITests.modulemap"; sourceTree = "<group>"; };
+		C55DBED69F75343DDB29060AED1D410B /* Pods-SmartGarden-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartGarden-Info.plist"; sourceTree = "<group>"; };
 		C9C3EF964FFA8A9F78851B59A8D4FFBC /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		CCC6858C85690F7AFEA7F6542EE9A69A /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		D37C93E650E4B54582DC9ADD65F460A8 /* Pods-SmartGarden-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartGarden-Info.plist"; sourceTree = "<group>"; };
-		D3973FE537B1F0B161CD36638F2932D7 /* Pods-SmartGarden-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmartGarden-dummy.m"; sourceTree = "<group>"; };
 		D54AEF5647A987180EDAD7E1CEF7387B /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		D81D709A319312587BDBA8F42D01DA90 /* Pods-SmartGarden-SmartGardenUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmartGarden-SmartGardenUITests-umbrella.h"; sourceTree = "<group>"; };
-		DC168D627046C1500C0E8299835EEBEC /* Pods-SmartGardenTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmartGardenTests-umbrella.h"; sourceTree = "<group>"; };
+		D954F0E41162867ADD29EA4BA784966C /* Pods-SmartGarden.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SmartGarden.modulemap"; sourceTree = "<group>"; };
 		DD807F155301ECA538A2C1C296E1186D /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		DDBCB5BAB2E83EE28F8AD31501F43BA3 /* Pods-SmartGarden-SmartGardenUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartGarden-SmartGardenUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DE36AED4DF687B2D37BD230D9D2F69B6 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
-		E5BC2D625D19536E0F68287959EB6287 /* Pods-SmartGarden.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartGarden.release.xcconfig"; sourceTree = "<group>"; };
-		F1C454365B09586EB637A8DC567FB8F8 /* Pods-SmartGarden.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SmartGarden.modulemap"; sourceTree = "<group>"; };
 		F5460AD0F6241621B45A17AB23A8E5B7 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		F640F61D5BEE8132009BAEAA65B587A4 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		FB4AF1BDBDBED0B7338AD1BD55377BC9 /* Pods-SmartGarden-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartGarden-acknowledgements.plist"; sourceTree = "<group>"; };
-		FFE0748CF64B6EC5EFABC9E3AC38FA07 /* Pods-SmartGarden-SmartGardenUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartGarden-SmartGardenUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,22 +87,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				50013C33D35EBAF31ACF3A8B3A9A3FB4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A69EE307AE517B56DE10909F5A88852 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C811FE86F3238615467AC102956D3845 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78FB8CC0867254386376C2E13740E618 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0F2729D9158D8C09EA30DDFADD143484 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,18 +101,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3558B135FEA089EBDB05C41B509E7C5C /* Pods-SmartGarden */ = {
+		4AC7B5BB4A9B3AC67A10615AEA045D7F /* Pods-SmartGarden */ = {
 			isa = PBXGroup;
 			children = (
-				F1C454365B09586EB637A8DC567FB8F8 /* Pods-SmartGarden.modulemap */,
-				4EA0029168CAB588B719A9652D7DD498 /* Pods-SmartGarden-acknowledgements.markdown */,
-				FB4AF1BDBDBED0B7338AD1BD55377BC9 /* Pods-SmartGarden-acknowledgements.plist */,
-				D3973FE537B1F0B161CD36638F2932D7 /* Pods-SmartGarden-dummy.m */,
-				0699628325144A320194459FDEA20510 /* Pods-SmartGarden-frameworks.sh */,
-				D37C93E650E4B54582DC9ADD65F460A8 /* Pods-SmartGarden-Info.plist */,
-				89177F161B253E05E0F3D43FC86C5DE6 /* Pods-SmartGarden-umbrella.h */,
-				A1771A4D38453509A92E138DB68CBF1A /* Pods-SmartGarden.debug.xcconfig */,
-				E5BC2D625D19536E0F68287959EB6287 /* Pods-SmartGarden.release.xcconfig */,
+				D954F0E41162867ADD29EA4BA784966C /* Pods-SmartGarden.modulemap */,
+				9CE31F779E1334FE76060F7DB573CDE4 /* Pods-SmartGarden-acknowledgements.markdown */,
+				823BD58F5C448FE1C0F53B4836DB8A32 /* Pods-SmartGarden-acknowledgements.plist */,
+				A33E1E69BC9941698B92F1B463BA9BD1 /* Pods-SmartGarden-dummy.m */,
+				29DBD98CAF8963125CF884425C87F2AB /* Pods-SmartGarden-frameworks.sh */,
+				C55DBED69F75343DDB29060AED1D410B /* Pods-SmartGarden-Info.plist */,
+				4E1FF8EE937B1C728725CCF1F53309B9 /* Pods-SmartGarden-umbrella.h */,
+				2377FD5551A477429E3221FBD9308C23 /* Pods-SmartGarden.debug.xcconfig */,
+				5A60106183D4C4533304B4EC98D65263 /* Pods-SmartGarden.release.xcconfig */,
 			);
 			name = "Pods-SmartGarden";
 			path = "Target Support Files/Pods-SmartGarden";
@@ -195,38 +140,20 @@
 			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
+		9022D976009B94CDA50BD2F3F72D511D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4AC7B5BB4A9B3AC67A10615AEA045D7F /* Pods-SmartGarden */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		90FDDC7F5D24472360CA259A8D40AE98 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				ABBD6121E62B33A53CF07892A75F2030 /* Alamofire */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		A670B3F27E804FE116071BE313BABF6F /* Pods-SmartGardenTests */ = {
-			isa = PBXGroup;
-			children = (
-				B3F6A54BE4BA9EB8CE8FCC490C04B7B5 /* Pods-SmartGardenTests.modulemap */,
-				92EEF71BF7E05CBF6A0E10E0920F0418 /* Pods-SmartGardenTests-acknowledgements.markdown */,
-				8A7B6507A040C70D16E1398588376A3E /* Pods-SmartGardenTests-acknowledgements.plist */,
-				4A1B9C4045AB0A308E35F27DD76D8436 /* Pods-SmartGardenTests-dummy.m */,
-				70EC4DCCD8DE4D7EB3ED76129506246D /* Pods-SmartGardenTests-Info.plist */,
-				DC168D627046C1500C0E8299835EEBEC /* Pods-SmartGardenTests-umbrella.h */,
-				13763D34383E5EA7B45D669BCD72313F /* Pods-SmartGardenTests.debug.xcconfig */,
-				6469882C868B67250D3A03B6C6CFFB77 /* Pods-SmartGardenTests.release.xcconfig */,
-			);
-			name = "Pods-SmartGardenTests";
-			path = "Target Support Files/Pods-SmartGardenTests";
-			sourceTree = "<group>";
-		};
-		A7B898296260D57C88E24065C9813E1B /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3558B135FEA089EBDB05C41B509E7C5C /* Pods-SmartGarden */,
-				B3BFBB4FD792C88BBA6DF740D65C828A /* Pods-SmartGarden-SmartGardenUITests */,
-				A670B3F27E804FE116071BE313BABF6F /* Pods-SmartGardenTests */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		ABBD6121E62B33A53CF07892A75F2030 /* Alamofire */ = {
@@ -255,21 +182,13 @@
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		B3BFBB4FD792C88BBA6DF740D65C828A /* Pods-SmartGarden-SmartGardenUITests */ = {
+		AE50108B1ED507F1AEE20D09E2411B30 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C759A2A4745DAD687E6BF42F3A7729D2 /* Pods-SmartGarden-SmartGardenUITests.modulemap */,
-				3F644498EF5BF2E7FC0C4AE807B10D80 /* Pods-SmartGarden-SmartGardenUITests-acknowledgements.markdown */,
-				C3C01BFF16735CF5A023E97A2E3A25F5 /* Pods-SmartGarden-SmartGardenUITests-acknowledgements.plist */,
-				7F710FFBADE8A05416FEA79A437D84D8 /* Pods-SmartGarden-SmartGardenUITests-dummy.m */,
-				7F621A9DCE978D62E3479548D41B39A2 /* Pods-SmartGarden-SmartGardenUITests-frameworks.sh */,
-				6C2682E72037F1CC4E153A13A306314A /* Pods-SmartGarden-SmartGardenUITests-Info.plist */,
-				D81D709A319312587BDBA8F42D01DA90 /* Pods-SmartGarden-SmartGardenUITests-umbrella.h */,
-				FFE0748CF64B6EC5EFABC9E3AC38FA07 /* Pods-SmartGarden-SmartGardenUITests.debug.xcconfig */,
-				DDBCB5BAB2E83EE28F8AD31501F43BA3 /* Pods-SmartGarden-SmartGardenUITests.release.xcconfig */,
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
+				8967C2294EC415AB3E3370341A5ED7B0 /* Pods_SmartGarden.framework */,
 			);
-			name = "Pods-SmartGarden-SmartGardenUITests";
-			path = "Target Support Files/Pods-SmartGarden-SmartGardenUITests";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -278,8 +197,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				90FDDC7F5D24472360CA259A8D40AE98 /* Pods */,
-				D27B210C6FD878A52E48E12960D757BF /* Products */,
-				A7B898296260D57C88E24065C9813E1B /* Targets Support Files */,
+				AE50108B1ED507F1AEE20D09E2411B30 /* Products */,
+				9022D976009B94CDA50BD2F3F72D511D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -291,17 +210,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D27B210C6FD878A52E48E12960D757BF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
-				8967C2294EC415AB3E3370341A5ED7B0 /* Pods_SmartGarden.framework */,
-				AB4D524AFF52C963632185CEB6DF7336 /* Pods_SmartGarden_SmartGardenUITests.framework */,
-				0CE03D286F4905DE3CA16D08E399D628 /* Pods_SmartGardenTests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -310,22 +218,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7B74645E07C39771156A1FA413B98D4 /* Alamofire-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		88DC655828BE029F6A299F60DEF634F9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F1A7D987B3B2F097AC1D99BDCE64AE2D /* Pods-SmartGardenTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9207135ECEC810DD943F4F8853271CBD /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B6CF84C704BFE3BF8879B17A5775D372 /* Pods-SmartGarden-SmartGardenUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,44 +249,6 @@
 			name = "Pods-SmartGarden";
 			productName = "Pods-SmartGarden";
 			productReference = 8967C2294EC415AB3E3370341A5ED7B0 /* Pods_SmartGarden.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		47703433796F9767873C19BCD1DAFAF9 /* Pods-SmartGardenTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 89382A2416BF5E3DA4F75533FFB87DBA /* Build configuration list for PBXNativeTarget "Pods-SmartGardenTests" */;
-			buildPhases = (
-				88DC655828BE029F6A299F60DEF634F9 /* Headers */,
-				B77A2970D49CA3E43A33F68425E33E71 /* Sources */,
-				78FB8CC0867254386376C2E13740E618 /* Frameworks */,
-				D7C37AE44DEC187A9A50AC5E5455A165 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7E02A8CE426FEACA0BAFF1AF22A51F70 /* PBXTargetDependency */,
-			);
-			name = "Pods-SmartGardenTests";
-			productName = "Pods-SmartGardenTests";
-			productReference = 0CE03D286F4905DE3CA16D08E399D628 /* Pods_SmartGardenTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A629819D9533750DED303DD39FE4F888 /* Pods-SmartGarden-SmartGardenUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C0F6B2A719F99D04191EC05EEE7720CA /* Build configuration list for PBXNativeTarget "Pods-SmartGarden-SmartGardenUITests" */;
-			buildPhases = (
-				9207135ECEC810DD943F4F8853271CBD /* Headers */,
-				E4D710FEB53D2FFF6F6DA08FC8D6ED96 /* Sources */,
-				0A69EE307AE517B56DE10909F5A88852 /* Frameworks */,
-				F4A1C0952D49CB883380835AEB28D6F5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1D05B627A41205DF763262CB880411DB /* PBXTargetDependency */,
-			);
-			name = "Pods-SmartGarden-SmartGardenUITests";
-			productName = "Pods-SmartGarden-SmartGardenUITests";
-			productReference = AB4D524AFF52C963632185CEB6DF7336 /* Pods_SmartGarden_SmartGardenUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
@@ -433,14 +287,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = D27B210C6FD878A52E48E12960D757BF /* Products */;
+			productRefGroup = AE50108B1ED507F1AEE20D09E2411B30 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
 				3A2D3206A98B136009F6879068441A22 /* Pods-SmartGarden */,
-				A629819D9533750DED303DD39FE4F888 /* Pods-SmartGarden-SmartGardenUITests */,
-				47703433796F9767873C19BCD1DAFAF9 /* Pods-SmartGardenTests */,
 			);
 		};
 /* End PBXProject section */
@@ -454,20 +306,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		473D3E892ABB6C798CFF290644259B34 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D7C37AE44DEC187A9A50AC5E5455A165 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F4A1C0952D49CB883380835AEB28D6F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -502,14 +340,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B77A2970D49CA3E43A33F68425E33E71 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				96CAB480C393243CBD4C0C4359998E5F /* Pods-SmartGardenTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CBEAF22BE518FAF9494277FDDFB4B95A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -518,41 +348,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E4D710FEB53D2FFF6F6DA08FC8D6ED96 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				798A597C0432E78C8D74254CE18D20FA /* Pods-SmartGarden-SmartGardenUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1D05B627A41205DF763262CB880411DB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = 67386F67ED5FE442994B48FEB315BDDF /* PBXContainerItemProxy */;
-		};
 		6FC7180DFC0AA2F9F7EAD01C6E0D7AD5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
 			targetProxy = A343E2C5B343AFF32ADD1B122B178E05 /* PBXContainerItemProxy */;
 		};
-		7E02A8CE426FEACA0BAFF1AF22A51F70 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-SmartGarden";
-			target = 3A2D3206A98B136009F6879068441A22 /* Pods-SmartGarden */;
-			targetProxy = DDD48FD5D987AF61F3CE89D4875F6723 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		021D93D6ACA18EEB53E4F56C3AD9379B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1771A4D38453509A92E138DB68CBF1A /* Pods-SmartGarden.debug.xcconfig */;
+			baseConfigurationReference = 2377FD5551A477429E3221FBD9308C23 /* Pods-SmartGarden.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -589,7 +399,7 @@
 		};
 		1F06F1FBBCCD82E50BC82E73DCE70359 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5BC2D625D19536E0F68287959EB6287 /* Pods-SmartGarden.release.xcconfig */;
+			baseConfigurationReference = 5A60106183D4C4533304B4EC98D65263 /* Pods-SmartGarden.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -625,12 +435,10 @@
 			};
 			name = Release;
 		};
-		39C469F4432C8A9905CEAFAE1E552087 /* Debug */ = {
+		49D5694AAF5FDFD1AC3B7485304970C0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FFE0748CF64B6EC5EFABC9E3AC38FA07 /* Pods-SmartGarden-SmartGardenUITests.debug.xcconfig */;
+			baseConfigurationReference = 985417470B9341C92A5160D4B2FF2B08 /* Alamofire.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -639,28 +447,28 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SmartGarden-SmartGardenUITests/Pods-SmartGarden-SmartGardenUITests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SmartGarden-SmartGardenUITests/Pods-SmartGarden-SmartGardenUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		515A328A258598632F4175B769FD0AE3 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -723,7 +531,7 @@
 			};
 			name = Release;
 		};
-		5424F0172CC84FFFBBB79E51E8CDC518 /* Release */ = {
+		51A33FE9CEB2666D5C7F4A3F5753786B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 985417470B9341C92A5160D4B2FF2B08 /* Alamofire.xcconfig */;
 			buildSettings = {
@@ -750,117 +558,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6E964B7863920F5C43CFEF8F2B5DFF02 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6469882C868B67250D3A03B6C6CFFB77 /* Pods-SmartGardenTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SmartGardenTests/Pods-SmartGardenTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SmartGardenTests/Pods-SmartGardenTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8D4FC2A2ABCEC0F48247BB23EC826FB5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 985417470B9341C92A5160D4B2FF2B08 /* Alamofire.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		98DA788AE3AA96C931718B44FD7D1FF9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13763D34383E5EA7B45D669BCD72313F /* Pods-SmartGardenTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SmartGardenTests/Pods-SmartGardenTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SmartGardenTests/Pods-SmartGardenTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -932,44 +630,6 @@
 			};
 			name = Debug;
 		};
-		E42541F6F3BD79E919AB65A3958F7633 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDBCB5BAB2E83EE28F8AD31501F43BA3 /* Pods-SmartGarden-SmartGardenUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SmartGarden-SmartGardenUITests/Pods-SmartGarden-SmartGardenUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SmartGarden-SmartGardenUITests/Pods-SmartGarden-SmartGardenUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -978,24 +638,6 @@
 			buildConfigurations = (
 				9E1272A5DE2BB5DD93189CB9850EB14E /* Debug */,
 				515A328A258598632F4175B769FD0AE3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		89382A2416BF5E3DA4F75533FFB87DBA /* Build configuration list for PBXNativeTarget "Pods-SmartGardenTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				98DA788AE3AA96C931718B44FD7D1FF9 /* Debug */,
-				6E964B7863920F5C43CFEF8F2B5DFF02 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C0F6B2A719F99D04191EC05EEE7720CA /* Build configuration list for PBXNativeTarget "Pods-SmartGarden-SmartGardenUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				39C469F4432C8A9905CEAFAE1E552087 /* Debug */,
-				E42541F6F3BD79E919AB65A3958F7633 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1012,8 +654,8 @@
 		E4A5194ABAF7A4780609E0E581DA6B54 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D4FC2A2ABCEC0F48247BB23EC826FB5 /* Debug */,
-				5424F0172CC84FFFBBB79E51E8CDC518 /* Release */,
+				51A33FE9CEB2666D5C7F4A3F5753786B /* Debug */,
+				49D5694AAF5FDFD1AC3B7485304970C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
