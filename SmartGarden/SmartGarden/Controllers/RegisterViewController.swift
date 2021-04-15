@@ -67,7 +67,6 @@ class RegisterViewController: UIViewController {
             txf_passConfirm.shake()
             debugPrint("Llegue hasta donde las contraseñas fallaron")
         }
-        
     }
 //Peticion HTTP para registrar usuario
     func registerUser(){
@@ -75,7 +74,7 @@ class RegisterViewController: UIViewController {
         let last = txf_lastname.text
         let mail = txf_mail.text
         let pass = txf_pass.text
-        Alamofire.request("https://smart-garden-api-v12.herokuapp.com/register",method: .post, parameters: ["name":nick!,"lastname":last!,"email":mail!,"password":pass!], encoding: JSONEncoding.default).responseJSON{(response) -> Void in
+        Alamofire.request("https://smart-garden-api-v12.herokuapp.com/register",method: .post, parameters: ["name":nick!,"lastName":last!,"email":mail!,"password":pass!], encoding: JSONEncoding.default).responseJSON{(response) -> Void in
             if let JSON = response.result.value{
                 print(JSON)
             }

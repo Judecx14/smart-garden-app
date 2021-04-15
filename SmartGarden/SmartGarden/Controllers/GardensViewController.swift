@@ -19,57 +19,39 @@ class GardensViewController: UIViewController {
         btn_new_garden.layer.cornerRadius = 15
         btn_new_garden.layer.borderWidth = 5
         btn_new_garden.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-        print(App.shared.tokensaved)
+        self.logedIn()
 
         // Do any additional setup after loading the view.
     }
-    
     @IBAction func logOut(_ sender: Any){
         debugPrint("Presionado")
-        /*let headers: HTTPHeaders = ["TOKEN":App.shared.tokensaved]
-    Alamofire.request("https://smart-garden-api-v12.herokuapp.com/logout",headers:headers).responseJSON{(response) -> Void in
-            if let JSON = response.value{
-                print(JSON)
-                self.performSegue(withIdentifier: "logOut", sender: nil)
-            }
-        }*/
-        /*var urlRequest = URLRequest(url:URL(string: "https://smart-garden-api-v12.herokuapp.com/logout")!)
-        urlRequest.httpMethod = HTTPMethod.get.rawValue
-        urlRequest = try! URLEncoding.default.encode(urlRequest, with: nil)
-        urlRequest.setValue(App.shared.tokensaved, forHTTPHeaderField: "Authorization")
-        Alamofire.request(urlRequest).responseJSON{response in
-            print(response)
-            self.performSegue(withIdentifier: "logOut", sender: nil)
-        }*/
-        /*Alamofire.request("https://smart-garden-api-v12.herokuapp.com/logout", method: .post, headers: ["TOKEN":App.shared.tokensaved]).responseJSON{(response) -> Void in
-            print(response)
-            if let JSON = response.result.value{
-                print(JSON)
-                self.performSegue(withIdentifier: "logOut", sender: nil)
-            }
-         //Funciono al igual que el HTTPHeaderField, mismo error
-        }*/
-        /*Alamofire.request("https://smart-garden-api-v12.herokuapp.com/logout", method: .head, parameters: ["TOKEN":App.shared.tokensaved]).responseJSON(completionHandler: {response in
-            if let JSON = response.value{
-                print(JSON)
-                self.performSegue(withIdentifier: "logOut", sender: nil)
-            }
-        })*/
-        /*var headersnot401: HTTPHeaders = ["Authorization":App.shared.tokensaved]
-        Alamofire.request("https://smart-garden-api-v12.herokuapp.com/logout", method: .post, parameters: ["Authentication":App.shared.tokensaved],headers: headersnot401).response{(response) -> Void in
+        let headersnot401: HTTPHeaders = ["Authorization":"Bearer \(App.shared.tokensaved)", "Accept":"aplication/json"]
+        Alamofire.request("https://smart-garden-api-v12.herokuapp.com/logout", method: .post, parameters: ["Authentication":App.shared.tokensaved],headers: headersnot401).responseJSON{(response) -> Void in
             print(response)
             if let JSON = response.request?.value{
                 print(JSON)
                 self.performSegue(withIdentifier: "logOut", sender: nil)
+            }else{
+                let alertwronglogout = UIAlertController(title: "Fallo el Logout", message: "Token Incorrecto", preferredStyle: .alert)
+                alertwronglogout.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(alertAction) in
+                    alertwronglogout.dismiss(animated: true, completion: nil)
+                }))
+                self.present(alertwronglogout, animated: true, completion: nil)
             }
-        }*/
-        /*let url: String = "https://smart-garden-api-v12.herokuapp.com/logout"
-        var request = URLRequest(url: NSURL(string:url)! as URL)
-        request.httpMethod = "POST"
-        request.setValue("Bearer\(App.shared.tokensaved)", forHTTPHeaderField: "Authorization")
-        request.setValue("aplication/json", forHTTPHeaderField: "Content-Type")
-        Alamofire.request(request).responseJSON{(responseObject) -> Void in
-            print(responseObject)
-        }*/
+        }
+    }
+    func logedIn(){
+        let headers: HTTPHeaders = ["Authorization":"Bearer \(App.shared.tokensaved)", "Accept":"application/json"]
+        Alamofire.request("https://smart-garden-api-v12.herokuapp.com/loggedIn", method: .get, headers: headers).responseData{(response) in
+            guard let data = response.value else { return }
+            print(data)
+            do{
+                let decoder = JSONDecoder()
+                let userRecived = try decoder.decode(UserLogged.self, from: data)
+                print(userRecived)
+            }catch{
+                print("Error: \(error)")
+            }
+        }
     }
 }

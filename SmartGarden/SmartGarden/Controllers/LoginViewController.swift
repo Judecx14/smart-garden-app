@@ -47,13 +47,13 @@ class LoginViewController: UIViewController {
                     guard let data = response.value else { return }
                     let decoder = JSONDecoder()
                     let auth = try decoder.decode(Auth.self, from: data)
-                    print(auth.token)
+                    //print(auth.token)
                     self.token.set(auth.token, forKey: "auth")
                     self.token.synchronize()
-                    print("Holaaa")
-                    print(auth)
+                    //print("Holaaa")
+                    //print(auth)
                     App.shared.tokensaved = auth.token
-                    print("Hola soy: "+App.shared.tokensaved)
+                    //print("Hola soy: "+App.shared.tokensaved)
                     //var tokenStored = self.getTokenStored()
                     //tokenStored?.append()
                     
@@ -63,16 +63,9 @@ class LoginViewController: UIViewController {
                     let alertWrongLogin = UIAlertController(title: "Error de Login", message: "Verifica que los datos sean correctos", preferredStyle: .alert)
                     alertWrongLogin.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(alertAction) in alertWrongLogin.dismiss(animated: true, completion: nil)}))
                     self.present(alertWrongLogin, animated: true, completion: nil)
+                    self.token.removeObject(forKey: "auth")
                 }
             }
         }
     }
-    func getTokenStored(){
-        //do{
-            //let decoder = JSONDecoder()
-            //if let data = self.token.object(forKey: "auth") as? Data{
-                //return try decoder.decode([Tokens], from: data)
-            //}
-        }
-    }
-
+}
