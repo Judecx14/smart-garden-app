@@ -1,5 +1,5 @@
 //
-//  App.swift
+//  HTTPRequests.swift
 //  SmartGarden
 //
 //  Created by Eduardo Maldonado on 13/04/21.
@@ -7,9 +7,3 @@
 //
 
 import Foundation
-
-class App: NSObject{
-    static var shared = App()
-    let defaults = UserDefaults.standard
-    var tokensaved:String = ""
-}

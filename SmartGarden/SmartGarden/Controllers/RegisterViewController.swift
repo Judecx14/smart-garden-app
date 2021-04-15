@@ -39,6 +39,7 @@ class RegisterViewController: UIViewController {
         let txfMail = txf_mail.text!
         let txfPass = txf_pass.text!
         let txfPassConfirm = txf_passConfirm.text!
+        
 //Verificar que los datos no esten vacios
         if txfName.isEmpty || txfMail.isEmpty || txfPass.isEmpty || txfLastName.isEmpty{
             let alertEmptyString = UIAlertController(title: "Faltan Datos", message: "Alguno de los campos estan vacios", preferredStyle: .alert)

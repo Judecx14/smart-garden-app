@@ -48,8 +48,15 @@ class LoginViewController: UIViewController {
                     let decoder = JSONDecoder()
                     let auth = try decoder.decode(Auth.self, from: data)
                     print(auth.token)
+                    self.token.set(auth.token, forKey: "auth")
+                    self.token.synchronize()
                     print("Holaaa")
                     print(auth)
+                    App.shared.tokensaved = auth.token
+                    print("Hola soy: "+App.shared.tokensaved)
+                    //var tokenStored = self.getTokenStored()
+                    //tokenStored?.append()
+                    
                     self.performSegue(withIdentifier: "LoginSuccessfull", sender: nil)
                 }catch {
                     print("Error en la serializacion \(error):")
@@ -60,4 +67,12 @@ class LoginViewController: UIViewController {
             }
         }
     }
-}
+    func getTokenStored(){
+        //do{
+            //let decoder = JSONDecoder()
+            //if let data = self.token.object(forKey: "auth") as? Data{
+                //return try decoder.decode([Tokens], from: data)
+            //}
+        }
+    }
+

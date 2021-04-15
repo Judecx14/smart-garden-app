@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Auth: Decodable{
+class Auth: Decodable{
     let token: String
     let refreshToken: String?
     let type: String
@@ -16,5 +16,13 @@ struct Auth: Decodable{
         self.token = token
         self.refreshToken = refreshToken
         self.type = type
+    }
+    func getToken() -> (String){
+        return self.token
+    }
+    func store(){
+            //let encoder = JSONEncoder()
+            //let data = try encoder.encode(App.shared.tokensaved)
+        App.shared.defaults.setValue(App.shared.tokensaved, forKey: "Token")
     }
 }
