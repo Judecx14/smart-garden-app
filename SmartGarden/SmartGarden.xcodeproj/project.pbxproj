@@ -27,6 +27,8 @@
 		3E477723261AA9A9002AA368 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47771C261AA9A8002AA368 /* help.png */; };
 		3E477724261AA9A9002AA368 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47771D261AA9A9002AA368 /* mail.png */; };
 		3E477725261AA9A9002AA368 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47771E261AA9A9002AA368 /* profile.png */; };
+		3E6EFAA72628FAD4009A15A7 /* Gardens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EFAA62628FAD4009A15A7 /* Gardens.swift */; };
+		3E6EFAA926290CA3009A15A7 /* NewGardenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EFAA826290CA3009A15A7 /* NewGardenViewController.swift */; };
 		3E9CF7C72625027600011AFF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9CF7C62625027600011AFF /* Extensions.swift */; };
 		3E9CF7CB26254DDA00011AFF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9CF7CA26254DDA00011AFF /* User.swift */; };
 		3E9F90C72625E57C00F9B9C3 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F90C62625E57C00F9B9C3 /* App.swift */; };
@@ -102,6 +104,8 @@
 		3E47771C261AA9A8002AA368 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
 		3E47771D261AA9A9002AA368 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
 		3E47771E261AA9A9002AA368 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		3E6EFAA62628FAD4009A15A7 /* Gardens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gardens.swift; sourceTree = "<group>"; };
+		3E6EFAA826290CA3009A15A7 /* NewGardenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGardenViewController.swift; sourceTree = "<group>"; };
 		3E9CF7C62625027600011AFF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3E9CF7CA26254DDA00011AFF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3E9F90C62625E57C00F9B9C3 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -285,6 +289,7 @@
 				3E9F90C8262610E200F9B9C3 /* Auth.swift */,
 				3EA3C7E82626792F00C759F5 /* HTTPRequests.swift */,
 				3EA3C7EC2628A5FB00C759F5 /* UserLogged.swift */,
+				3E6EFAA62628FAD4009A15A7 /* Gardens.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 				3EE8C44D261D15AF005E110E /* PlantsViewController.swift */,
 				3EB74BC4261E613300AF0066 /* UsViewController.swift */,
 				3EB74BC6261E617C00AF0066 /* ProfileViewController.swift */,
+				3E6EFAA826290CA3009A15A7 /* NewGardenViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -527,7 +533,9 @@
 			files = (
 				3EE8C44A261CE191005E110E /* GardensViewController.swift in Sources */,
 				3E9CF7C72625027600011AFF /* Extensions.swift in Sources */,
+				3E6EFAA926290CA3009A15A7 /* NewGardenViewController.swift in Sources */,
 				3E9F90C72625E57C00F9B9C3 /* App.swift in Sources */,
+				3E6EFAA72628FAD4009A15A7 /* Gardens.swift in Sources */,
 				3EF9CCCF261BC7A4001E6ABD /* LoginViewController.swift in Sources */,
 				3E4776DF261A944B002AA368 /* ViewController.swift in Sources */,
 				3EB74BC5261E613300AF0066 /* UsViewController.swift in Sources */,

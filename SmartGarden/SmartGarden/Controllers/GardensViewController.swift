@@ -11,8 +11,14 @@ import Alamofire
 
 class GardensViewController: UIViewController {
 
+    @IBOutlet weak var viewBK: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var lb_Nombre: UILabel!
+    @IBOutlet weak var lb_Location: UILabel!
     @IBOutlet weak var btn_new_garden: UIButton!
     let defaults = UserDefaults.standard
+    var array:NSArray = []
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,6 +26,12 @@ class GardensViewController: UIViewController {
         btn_new_garden.layer.borderWidth = 5
         btn_new_garden.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         self.logedIn()
+        getStoredGardens { (gardens) in
+            for jardines in gardens{
+                print(jardines.name)
+                print("espacio---")
+            }
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -48,10 +60,45 @@ class GardensViewController: UIViewController {
             do{
                 let decoder = JSONDecoder()
                 let userRecived = try decoder.decode(UserLogged.self, from: data)
+                self.getGardens(idd: userRecived.id)
                 print(userRecived)
             }catch{
                 print("Error: \(error)")
             }
         }
     }
+    func getGardens(idd: Int){
+        Alamofire.request("https://smart-garden-api-v12.herokuapp.com/api/Garden/showByUser?id=\(idd)", method: .get).responseJSON{(response) -> Void in
+            if let JSON = response.result.value{
+                self.array = (JSON as? NSArray)!
+                print(self.array)
+            }
+        }
+    }
+    func getStoredGardens(completionHandler: @escaping([GardensSaved])->Void){
+        Alamofire.request("https://smart-garden-api-v12.herokuapp.com/api/Garden/showByUser?id=4", method: .get).responseData(completionHandler: {(response) in
+            guard let data = response.value else { return }
+            do{
+                let decoder = try  JSONDecoder().decode([GardensSaved].self , from: data)
+                completionHandler(decoder)
+            }catch{
+                print("Error \(error)")
+            }
+        })
+        
+    }
+    /*func fillStack(){
+        let height = 150
+        let spacing = 10
+        let width = 150
+        var positionY = 0
+        self.array.reversed().forEach { (task) in
+            let itemTask = viewBK(frame: CGRect(x: 0, y: positionY, width: width, height: height))
+            lb_Nombre.text = ""
+            lb_Location.text = ""
+            self.stackView.addSubview(itemTask)
+            positionY += height + spacing
+        }
+        self.scrollView.contentSize.height = CGFloat(self.array.count * (height + spacing))
+    }*/
 }
