@@ -17,8 +17,16 @@ class GardensViewController: UIViewController {
     @IBOutlet weak var lb_Nombre: UILabel!
     @IBOutlet weak var lb_Location: UILabel!
     @IBOutlet weak var btn_new_garden: UIButton!
+    
+    
+    @IBAction func new(_ sender: Any) {
+        self.performSegue(withIdentifier: "addNewGarden", sender: nil)
+    }
+    
+    
     let defaults = UserDefaults.standard
     var array:NSArray = []
+    var idd = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,6 +34,9 @@ class GardensViewController: UIViewController {
         btn_new_garden.layer.borderWidth = 5
         btn_new_garden.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         self.logedIn()
+        
+        print("tengo este id: ",idd)
+        
         getStoredGardens { (gardens) in
             for jardines in gardens{
                 print(jardines.name)
@@ -56,27 +67,30 @@ class GardensViewController: UIViewController {
         let headers: HTTPHeaders = ["Authorization":"Bearer \(App.shared.tokensaved)", "Accept":"application/json"]
         Alamofire.request("https://smart-garden-api-v12.herokuapp.com/loggedIn", method: .get, headers: headers).responseData{(response) in
             guard let data = response.value else { return }
-            print(data)
+            //print(data)
             do{
                 let decoder = JSONDecoder()
                 let userRecived = try decoder.decode(UserLogged.self, from: data)
-                self.getGardens(idd: userRecived.id)
-                print(userRecived)
+                self.idd = userRecived.id
+                //self.getGardens(idd: self.idd)
+                //print("tengo este id: ",self.idd)
+                print("el logged in es este: ",userRecived.id)
+                print("ID: ",self.idd)
             }catch{
                 print("Error: \(error)")
             }
         }
     }
-    func getGardens(idd: Int){
+    /*func getGardens(idd: Int){
         Alamofire.request("https://smart-garden-api-v12.herokuapp.com/api/Garden/showByUser?id=\(idd)", method: .get).responseJSON{(response) -> Void in
             if let JSON = response.result.value{
                 self.array = (JSON as? NSArray)!
                 print(self.array)
             }
         }
-    }
+    }*/
     func getStoredGardens(completionHandler: @escaping([GardensSaved])->Void){
-        Alamofire.request("https://smart-garden-api-v12.herokuapp.com/api/Garden/showByUser?id=4", method: .get).responseData(completionHandler: {(response) in
+        Alamofire.request("https://smart-garden-api-v12.herokuapp.com/api/Garden/showByUser?id=14", method: .get).responseData(completionHandler: {(response) in
             guard let data = response.value else { return }
             do{
                 let decoder = try  JSONDecoder().decode([GardensSaved].self , from: data)

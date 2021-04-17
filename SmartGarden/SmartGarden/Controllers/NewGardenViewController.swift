@@ -28,12 +28,29 @@ class NewGardenViewController: UIViewController {
         
     }
     func newGarden(idd: Int){
-        let name = txf_name.text
-        let location = txf_localization.text
-        Alamofire.request("https://smart-garden-api-v12.herokuapp.com/api/newGarden", method: .post, parameters: ["name":name!, "location":location!, "user_id":idd], encoding: JSONEncoding.default).responseJSON { (response) in
-            if let JSON = response.result.value{
-                print(JSON)
-                self.performSegue(withIdentifier: "gardenAdded", sender: nil)
+        let name = txf_name.text!
+        let location = txf_localization.text!
+        if name.isEmpty || location.isEmpty{
+            txf_name.shake()
+            txf_localization.shake()
+            let alertEmptyData = UIAlertController(title: "Datos incompletos", message: "porfavor llena ambos datos", preferredStyle: .alert)
+            alertEmptyData.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(alertAction) in
+                alertEmptyData.dismiss(animated: true, completion: nil)
+            }))
+            self.present(alertEmptyData, animated: true, completion: nil)
+        }else{
+            Alamofire.request("https://smart-garden-api-v12.herokuapp.com/api/newGarden", method: .post, parameters: ["name":name, "location":location, "user_id":idd], encoding: JSONEncoding.default).responseJSON { (response) in
+                if let JSON = response.result.value{
+                    print(JSON)
+                    self.performSegue(withIdentifier: "gardenAdded", sender: nil)
+                }else{
+                    print("Error de serialización.")
+                   let alertWrongData = UIAlertController(title: "Datos incorrectos", message: "Verifica que los datos sean correctos.", preferredStyle: .alert)
+                    alertWrongData.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(alertAction) in
+                        alertWrongData.dismiss(animated: true, completion: nil)
+                    }))
+                    self.present(alertWrongData, animated: true, completion: nil)
+                }
             }
         }
     }
