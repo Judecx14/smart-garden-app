@@ -688,13 +688,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del sensor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOs-c3-TJP">
-                                <rect key="frame" x="45" y="181" width="171" height="22"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                <rect key="frame" x="45" y="181" width="189.5" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
                                 <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0C5-YR-VSy">
-                                <rect key="frame" x="45" y="213" width="324" height="35"/>
+                                <rect key="frame" x="45" y="215.5" width="324" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="wiI-31-LVh"/>
                                 </constraints>
@@ -703,13 +703,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pines del sensor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPC-ed-rZ0">
-                                <rect key="frame" x="45" y="263" width="146.5" height="22"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                <rect key="frame" x="45" y="265.5" width="163" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
                                 <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jen-uv-cbH">
-                                <rect key="frame" x="45" y="295" width="324" height="35"/>
+                                <rect key="frame" x="45" y="300" width="324" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="PyN-0c-EPY"/>
                                 </constraints>
@@ -718,13 +718,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de Sensor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lp4-hO-Bde">
-                                <rect key="frame" x="45" y="345" width="135.5" height="22"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                <rect key="frame" x="45" y="350" width="150.5" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
                                 <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ixe-k5-GhR">
-                                <rect key="frame" x="45" y="377" width="324" height="35"/>
+                                <rect key="frame" x="45" y="384.5" width="324" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Y5w-Q5-e9n"/>
                                 </constraints>
@@ -733,9 +733,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2B-it-109">
-                                <rect key="frame" x="45" y="437" width="324" height="34"/>
+                                <rect key="frame" x="45" y="444.5" width="324" height="37"/>
                                 <color key="backgroundColor" red="0.3921568627" green="0.73333333329999995" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
                                 <state key="normal" title="Añadir sensor">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1254,9 +1254,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YH-EE-EU0">
-                                <rect key="frame" x="45" y="447.5" width="324" height="34"/>
+                                <rect key="frame" x="45" y="447.5" width="324" height="37"/>
                                 <color key="backgroundColor" red="0.3921568627" green="0.73333333329999995" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
                                 <state key="normal" title="Registrar planta">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1520,30 +1520,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vBU-Ix-WjM">
-                                <rect key="frame" x="110" y="273" width="194" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Localización" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UkU-7H-HTT">
+                                <rect key="frame" x="45" y="300" width="324" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="0TS-pe-wxm"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Localización" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UkU-7H-HTT">
-                                <rect key="frame" x="110" y="347" width="194" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODv-Hq-mLn">
-                                <rect key="frame" x="161" y="433" width="93" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Gardar Jardin"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODv-Hq-mLn">
+                                <rect key="frame" x="45" y="355" width="324" height="37"/>
+                                <color key="backgroundColor" red="0.3921568627" green="0.73333333329999995" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <state key="normal" title="Guardar Jardin">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="saveGarden:" destination="fB3-9k-fyj" eventType="touchUpInside" id="CLE-ze-I0i"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Añadir jardin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yvj-aZ-itj">
+                                <rect key="frame" x="20" y="94" width="221" height="37"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="30"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.27058823529999998" blue="0.1019607843" alpha="0.93999999999999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del Jardin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEo-eH-ZOn">
+                                <rect key="frame" x="45" y="181" width="184" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del Jardin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icP-4L-rYx">
+                                <rect key="frame" x="45" y="265.5" width="184" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vBU-Ix-WjM">
+                                <rect key="frame" x="45" y="215.5" width="324" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ext-3a-9P6"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Yvj-aZ-itj" firstAttribute="leading" secondItem="IDL-gX-HKY" secondAttribute="leading" constant="20" id="243-BK-csD"/>
+                            <constraint firstItem="EEo-eH-ZOn" firstAttribute="top" secondItem="Yvj-aZ-itj" secondAttribute="bottom" constant="50" id="8L8-6s-Inu"/>
+                            <constraint firstItem="IDL-gX-HKY" firstAttribute="trailing" secondItem="ODv-Hq-mLn" secondAttribute="trailing" constant="45" id="8iT-Sg-uVj"/>
+                            <constraint firstItem="EEo-eH-ZOn" firstAttribute="leading" secondItem="IDL-gX-HKY" secondAttribute="leading" constant="45" id="AMR-Iw-RDf"/>
+                            <constraint firstItem="UkU-7H-HTT" firstAttribute="leading" secondItem="IDL-gX-HKY" secondAttribute="leading" constant="45" id="DPF-pZ-P0l"/>
+                            <constraint firstItem="IDL-gX-HKY" firstAttribute="trailing" secondItem="vBU-Ix-WjM" secondAttribute="trailing" constant="45" id="Hrw-26-8lP"/>
+                            <constraint firstItem="icP-4L-rYx" firstAttribute="leading" secondItem="IDL-gX-HKY" secondAttribute="leading" constant="45" id="QeM-vD-XiU"/>
+                            <constraint firstItem="UkU-7H-HTT" firstAttribute="top" secondItem="icP-4L-rYx" secondAttribute="bottom" constant="10" id="ULu-4P-pgJ"/>
+                            <constraint firstItem="Yvj-aZ-itj" firstAttribute="top" secondItem="IDL-gX-HKY" secondAttribute="top" constant="50" id="WM6-X6-sZT"/>
+                            <constraint firstItem="ODv-Hq-mLn" firstAttribute="top" secondItem="UkU-7H-HTT" secondAttribute="bottom" constant="20" id="eZI-mA-Bx9"/>
+                            <constraint firstItem="ODv-Hq-mLn" firstAttribute="leading" secondItem="IDL-gX-HKY" secondAttribute="leading" constant="45" id="gGY-ja-R4I"/>
+                            <constraint firstItem="vBU-Ix-WjM" firstAttribute="leading" secondItem="IDL-gX-HKY" secondAttribute="leading" constant="45" id="kHe-df-AcD"/>
+                            <constraint firstItem="IDL-gX-HKY" firstAttribute="trailing" secondItem="UkU-7H-HTT" secondAttribute="trailing" constant="45" id="pF4-g1-6LX"/>
+                            <constraint firstItem="icP-4L-rYx" firstAttribute="top" secondItem="vBU-Ix-WjM" secondAttribute="bottom" constant="15" id="uWL-3M-2tT"/>
+                            <constraint firstItem="vBU-Ix-WjM" firstAttribute="top" secondItem="EEo-eH-ZOn" secondAttribute="bottom" constant="10" id="wWL-bK-1Pg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="IDL-gX-HKY"/>
                     </view>
                     <connections>
@@ -1697,7 +1739,6 @@
         <image name="termometro 1.png" width="63" height="63"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pQk-3A-EKT"/>
         <segue reference="7qc-XD-lHa"/>
         <segue reference="jyG-tY-Ft0"/>
         <segue reference="8o2-23-DxY"/>
