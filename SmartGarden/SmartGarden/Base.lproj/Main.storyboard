@@ -424,12 +424,46 @@
                                         <rect key="frame" x="48" y="369" width="150" height="428"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image 4.png" translatesAutoresizingMaskIntoConstraints="NO" id="SS9-eP-c7t">
+                                        <rect key="frame" x="30" y="30" width="48" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="41T-yk-TFx"/>
+                                            <constraint firstAttribute="width" constant="48" id="pRG-cH-JcL"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pq-oo-7r7">
+                                        <rect key="frame" x="346" y="30" width="38" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="38" id="QrZ-ov-wJk"/>
+                                            <constraint firstAttribute="height" constant="38" id="bUd-Fx-N6Z"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="hamburguermenu.png"/>
+                                        <connections>
+                                            <segue destination="uPK-tb-CnY" kind="show" id="mEf-P6-gRf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1e-w4-uEL">
+                                        <rect key="frame" x="20" y="92" width="67" height="33"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                        <state key="normal" title="-&gt; Salir">
+                                            <color key="titleColor" red="0.3921568627" green="0.73333333329999995" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logOut:" destination="wmQ-6S-SoS" eventType="touchUpInside" id="qsU-2X-S9J"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="XEc-fT-jKs" secondAttribute="bottom" constant="522" id="8eP-oz-sOB"/>
+                                    <constraint firstItem="2pq-oo-7r7" firstAttribute="top" secondItem="imY-5t-c32" secondAttribute="top" constant="30" id="DmK-CP-w5Q"/>
                                     <constraint firstAttribute="trailing" secondItem="XEc-fT-jKs" secondAttribute="trailing" constant="36" id="Tbo-VF-qW7"/>
                                     <constraint firstItem="XEc-fT-jKs" firstAttribute="leading" secondItem="imY-5t-c32" secondAttribute="leading" constant="228" id="Vjh-aa-KF5"/>
+                                    <constraint firstAttribute="trailing" secondItem="2pq-oo-7r7" secondAttribute="trailing" constant="30" id="aY0-Vw-dMq"/>
+                                    <constraint firstItem="j1e-w4-uEL" firstAttribute="leading" secondItem="imY-5t-c32" secondAttribute="leading" constant="20" id="bFL-2A-xit"/>
+                                    <constraint firstItem="SS9-eP-c7t" firstAttribute="leading" secondItem="imY-5t-c32" secondAttribute="leading" constant="30" id="eDf-DO-G8Q"/>
+                                    <constraint firstItem="j1e-w4-uEL" firstAttribute="top" secondItem="SS9-eP-c7t" secondAttribute="bottom" constant="10" id="kRR-gE-Up8"/>
                                     <constraint firstItem="XEc-fT-jKs" firstAttribute="top" secondItem="imY-5t-c32" secondAttribute="top" constant="180" id="opd-GN-hWP"/>
+                                    <constraint firstItem="SS9-eP-c7t" firstAttribute="top" secondItem="imY-5t-c32" secondAttribute="top" constant="30" id="pJO-SB-2Yz"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -785,6 +819,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kGE-my-vAp"/>
                     </view>
+                    <connections>
+                        <segue destination="4nF-Nu-4dN" kind="presentation" identifier="sensorAdded" id="VCG-g3-VoB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QUg-gl-uVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -874,7 +911,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ta-v8-FPt" userLabel="Foto">
                                         <rect key="frame" x="229" y="95" width="144" height="144"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camerab 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="9bn-Mi-GYi">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="microchip.png" translatesAutoresizingMaskIntoConstraints="NO" id="9bn-Mi-GYi">
                                                 <rect key="frame" x="35" y="28" width="73" height="73"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="73" id="Igb-rz-nxg"/>
@@ -890,6 +927,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyj-0y-Mxu">
                                                 <rect key="frame" x="0.0" y="0.0" width="144" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <segue destination="wig-DE-tvK" kind="show" id="x86-6T-xbA"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.39215686274509803" green="0.73333333333333328" blue="0.36078431372549019" alpha="0.75" colorSpace="calibratedRGB"/>
@@ -1417,6 +1457,9 @@
                                                 <state key="normal" title="Guardar Cambios">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="updateProfile:" destination="tfx-Ip-utu" eventType="touchUpInside" id="Xxf-Eh-NIp"/>
+                                                </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e50-LJ-Jj1">
                                                 <rect key="frame" x="94" y="666" width="284" height="69"/>
@@ -1524,6 +1567,9 @@
                     </view>
                     <connections>
                         <outlet property="btn_acerca" destination="hdF-G4-uf1" id="UTX-xa-jHY"/>
+                        <outlet property="txf_email" destination="bww-3R-hFK" id="Kak-6P-r63"/>
+                        <outlet property="txf_lastName" destination="bgn-E6-Gtz" id="F0E-iO-IRw"/>
+                        <outlet property="txf_name" destination="8CF-tX-lwW" id="ghd-gz-Cgj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Leb-YX-tUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1738,7 +1784,6 @@
     <resources>
         <image name="Screenshot_1.png" width="32.25" height="29.25"/>
         <image name="bkg_sign.png" width="796" height="1349"/>
-        <image name="camerab 1.png" width="73" height="67"/>
         <image name="e_Nexus_logo 1.png" width="184" height="195"/>
         <image name="edit.png" width="62" height="62"/>
         <image name="filter-512 3.png" width="24" height="17"/>
@@ -1751,6 +1796,7 @@
         <image name="image 5.png" width="48" height="52"/>
         <image name="image 8.png" width="99" height="101"/>
         <image name="maceta 1.png" width="214" height="235"/>
+        <image name="microchip.png" width="384" height="384"/>
         <image name="plantas 2.png" width="43" height="43"/>
         <image name="profile.png" width="260" height="260"/>
         <image name="rega 1.png" width="71" height="71"/>
@@ -1758,7 +1804,9 @@
         <image name="termometro 1.png" width="63" height="63"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="VCG-g3-VoB"/>
         <segue reference="7qc-XD-lHa"/>
+        <segue reference="mEf-P6-gRf"/>
         <segue reference="jyG-tY-Ft0"/>
         <segue reference="8o2-23-DxY"/>
     </inferredMetricsTieBreakers>

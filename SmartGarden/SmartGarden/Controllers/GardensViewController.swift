@@ -91,6 +91,8 @@ class GardensViewController: UIViewController {
                         self.viewBK.backgroundColor = .brown
                         self.stackView2.addSubview(gardenStack)
                          */
+                        self.IV_image.image = UIImage(named: "plantas 2.png")
+                        self.viewBK.backgroundColor = .brown
                         gardenStack.buildGarden(jardines)
                         self.stackView2.addSubview(gardenStack)
                         positionY += height + spacing
