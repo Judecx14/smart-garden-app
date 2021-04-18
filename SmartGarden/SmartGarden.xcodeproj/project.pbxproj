@@ -58,6 +58,7 @@
 		3EEC0C18262BB5AA00735137 /* plantas 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EEC0C17262BB5AA00735137 /* plantas 2.png */; };
 		3EEC0C1A262C9B0200735137 /* microchip.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EEC0C19262C9B0100735137 /* microchip.png */; };
 		3EEC0C1C262CCE8E00735137 /* UserForLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEC0C1B262CCE8E00735137 /* UserForLog.swift */; };
+		3EEC0C1E262CD49B00735137 /* ProfilePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEC0C1D262CD49B00735137 /* ProfilePreviewViewController.swift */; };
 		3EF9CCCF261BC7A4001E6ABD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF9CCCE261BC7A4001E6ABD /* LoginViewController.swift */; };
 		3EF9CCD1261BC7DC001E6ABD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF9CCD0261BC7DC001E6ABD /* RegisterViewController.swift */; };
 		58785AA40FAB49B8E8141EE9 /* Pods_SmartGarden.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BDC880986605C116B4CFC3 /* Pods_SmartGarden.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -137,6 +138,7 @@
 		3EEC0C17262BB5AA00735137 /* plantas 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plantas 2.png"; sourceTree = "<group>"; };
 		3EEC0C19262C9B0100735137 /* microchip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microchip.png; sourceTree = "<group>"; };
 		3EEC0C1B262CCE8E00735137 /* UserForLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserForLog.swift; sourceTree = "<group>"; };
+		3EEC0C1D262CD49B00735137 /* ProfilePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePreviewViewController.swift; sourceTree = "<group>"; };
 		3EF9CCCE261BC7A4001E6ABD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3EF9CCD0261BC7DC001E6ABD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		52BDC880986605C116B4CFC3 /* Pods_SmartGarden.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartGarden.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -336,6 +338,7 @@
 				3EB74BC4261E613300AF0066 /* UsViewController.swift */,
 				3EB74BC6261E617C00AF0066 /* ProfileViewController.swift */,
 				3E6EFAA826290CA3009A15A7 /* NewGardenViewController.swift */,
+				3EEC0C1D262CD49B00735137 /* ProfilePreviewViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -561,6 +564,7 @@
 				3EF9CCCF261BC7A4001E6ABD /* LoginViewController.swift in Sources */,
 				3E4776DF261A944B002AA368 /* ViewController.swift in Sources */,
 				3EEC0C1C262CCE8E00735137 /* UserForLog.swift in Sources */,
+				3EEC0C1E262CD49B00735137 /* ProfilePreviewViewController.swift in Sources */,
 				3EB74BC5261E613300AF0066 /* UsViewController.swift in Sources */,
 				3E4776DD261A944A002AA368 /* AppDelegate.swift in Sources */,
 				3EE8C44E261D15AF005E110E /* PlantsViewController.swift in Sources */,

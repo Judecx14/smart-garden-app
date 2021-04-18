@@ -585,10 +585,10 @@
             </objects>
             <point key="canvasLocation" x="4170" y="494"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile Preview View Controller-->
         <scene sceneID="dAk-lO-vWw">
             <objects>
-                <viewController id="uPK-tb-CnY" sceneMemberID="viewController">
+                <viewController id="uPK-tb-CnY" customClass="ProfilePreviewViewController" customModule="SmartGarden" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HQu-hZ-EHQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -720,6 +720,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6If-Sm-mrf"/>
                     </view>
+                    <connections>
+                        <outlet property="lb_nombre" destination="IFD-ni-v3g" id="Mcd-Dy-sxk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0zE-lP-762" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1805,7 +1808,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="VCG-g3-VoB"/>
-        <segue reference="7qc-XD-lHa"/>
+        <segue reference="EBp-7e-CeX"/>
         <segue reference="mEf-P6-gRf"/>
         <segue reference="jyG-tY-Ft0"/>
         <segue reference="8o2-23-DxY"/>
