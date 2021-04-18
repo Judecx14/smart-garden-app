@@ -376,24 +376,30 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SyW-Cl-Vlv">
-                                                        <rect key="frame" x="8" y="8" width="42" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <rect key="frame" x="8" y="8" width="37.5" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" red="1" green="0.98823529409999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Goy-r4-BHd">
-                                                        <rect key="frame" x="8" y="36.5" width="42" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <rect key="frame" x="8" y="34" width="37.5" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" red="1" green="0.9882352941176471" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQB-zz-2SH">
-                                                        <rect key="frame" x="8" y="126" width="42" height="20.5"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQB-zz-2SH">
+                                                        <rect key="frame" x="10" y="125.5" width="75" height="14.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" red="1" green="0.98823529409999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plantas 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="uf1-4v-e2S">
+                                                        <rect key="frame" x="105" y="100" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="ESe-5c-mds"/>
+                                                            <constraint firstAttribute="height" constant="40" id="ISd-fh-2QK"/>
+                                                        </constraints>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -402,12 +408,21 @@
                                                     <constraint firstItem="SyW-Cl-Vlv" firstAttribute="top" secondItem="Lvs-t8-p37" secondAttribute="topMargin" id="F7q-A3-6fG"/>
                                                     <constraint firstItem="SyW-Cl-Vlv" firstAttribute="leading" secondItem="Lvs-t8-p37" secondAttribute="leadingMargin" id="MVb-YC-A98"/>
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Goy-r4-BHd" secondAttribute="trailing" constant="20" symbolic="YES" id="UkM-pj-KPG"/>
+                                                    <constraint firstAttribute="bottom" secondItem="fQB-zz-2SH" secondAttribute="bottom" constant="10" id="Zxb-Ni-SUp"/>
                                                     <constraint firstItem="SyW-Cl-Vlv" firstAttribute="leading" secondItem="Goy-r4-BHd" secondAttribute="leading" id="bjF-jq-8D3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fQB-zz-2SH" secondAttribute="trailing" constant="65" id="i0O-H9-rlk"/>
+                                                    <constraint firstAttribute="bottom" secondItem="uf1-4v-e2S" secondAttribute="bottom" constant="10" id="n4n-0r-O1j"/>
                                                     <constraint firstAttribute="width" constant="150" id="syU-Hd-Tj3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="uf1-4v-e2S" secondAttribute="trailing" constant="5" id="tjx-Y7-MUC"/>
                                                     <constraint firstItem="Goy-r4-BHd" firstAttribute="top" secondItem="SyW-Cl-Vlv" secondAttribute="bottom" constant="8" symbolic="YES" id="tvc-0y-MVv"/>
+                                                    <constraint firstItem="fQB-zz-2SH" firstAttribute="leading" secondItem="Lvs-t8-p37" secondAttribute="leading" constant="10" id="uV8-gl-Dbv"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="grh-AL-jds">
+                                        <rect key="frame" x="48" y="369" width="150" height="428"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -429,11 +444,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="OL9-gC-VhE"/>
                     <connections>
+                        <outlet property="IV_image" destination="uf1-4v-e2S" id="FIp-Iv-Wic"/>
                         <outlet property="btn_new_garden" destination="XEc-fT-jKs" id="zum-kv-mw9"/>
                         <outlet property="lb_Location" destination="Goy-r4-BHd" id="Eal-Tp-98a"/>
                         <outlet property="lb_Nombre" destination="SyW-Cl-Vlv" id="Me2-xb-Lwc"/>
+                        <outlet property="lb_created_at" destination="fQB-zz-2SH" id="TCZ-dA-S4i"/>
                         <outlet property="scrollView" destination="imY-5t-c32" id="fYR-tL-ywU"/>
                         <outlet property="stackView" destination="giQ-2b-Bon" id="Gm1-xM-910"/>
+                        <outlet property="stackView2" destination="grh-AL-jds" id="Q4p-uP-nJv"/>
                         <outlet property="viewBK" destination="Lvs-t8-p37" id="cfA-yX-sJD"/>
                         <segue destination="BYZ-38-t0r" kind="showDetail" identifier="logOut" id="8o2-23-DxY"/>
                         <segue destination="fB3-9k-fyj" kind="show" identifier="addNewGarden" id="pQk-3A-EKT"/>
@@ -1591,7 +1609,7 @@
                     <connections>
                         <outlet property="txf_localization" destination="UkU-7H-HTT" id="HCt-sc-1eQ"/>
                         <outlet property="txf_name" destination="vBU-Ix-WjM" id="adz-VU-K68"/>
-                        <segue destination="wmQ-6S-SoS" kind="presentation" identifier="gardenAdded" id="jyG-tY-Ft0"/>
+                        <segue destination="wmQ-6S-SoS" kind="show" identifier="gardenAdded" id="jyG-tY-Ft0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ofO-9q-wS2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1733,6 +1751,7 @@
         <image name="image 5.png" width="48" height="52"/>
         <image name="image 8.png" width="99" height="101"/>
         <image name="maceta 1.png" width="214" height="235"/>
+        <image name="plantas 2.png" width="43" height="43"/>
         <image name="profile.png" width="260" height="260"/>
         <image name="rega 1.png" width="71" height="71"/>
         <image name="soltar 1.png" width="58" height="58"/>

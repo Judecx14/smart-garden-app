@@ -55,6 +55,7 @@
 		3EE8C44A261CE191005E110E /* GardensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE8C449261CE191005E110E /* GardensViewController.swift */; };
 		3EE8C44C261D0BB0005E110E /* hamburguermenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE8C44B261D0BAF005E110E /* hamburguermenu.png */; };
 		3EE8C44E261D15AF005E110E /* PlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE8C44D261D15AF005E110E /* PlantsViewController.swift */; };
+		3EEC0C18262BB5AA00735137 /* plantas 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EEC0C17262BB5AA00735137 /* plantas 2.png */; };
 		3EF9CCCF261BC7A4001E6ABD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF9CCCE261BC7A4001E6ABD /* LoginViewController.swift */; };
 		3EF9CCD1261BC7DC001E6ABD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF9CCD0261BC7DC001E6ABD /* RegisterViewController.swift */; };
 		58785AA40FAB49B8E8141EE9 /* Pods_SmartGarden.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BDC880986605C116B4CFC3 /* Pods_SmartGarden.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -131,6 +132,7 @@
 		3EE8C449261CE191005E110E /* GardensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardensViewController.swift; sourceTree = "<group>"; };
 		3EE8C44B261D0BAF005E110E /* hamburguermenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburguermenu.png; sourceTree = "<group>"; };
 		3EE8C44D261D15AF005E110E /* PlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewController.swift; sourceTree = "<group>"; };
+		3EEC0C17262BB5AA00735137 /* plantas 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plantas 2.png"; sourceTree = "<group>"; };
 		3EF9CCCE261BC7A4001E6ABD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3EF9CCD0261BC7DC001E6ABD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		52BDC880986605C116B4CFC3 /* Pods_SmartGarden.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartGarden.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -234,6 +236,7 @@
 		3E477716261A96F1002AA368 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3EEC0C17262BB5AA00735137 /* plantas 2.png */,
 				3EA3C7EA26267D7C00C759F5 /* exit.png */,
 				3ECB0841261EA602009DA834 /* Buttons */,
 				3ECB0835261EA17D009DA834 /* Screenshot_1.png */,
@@ -446,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E4776E7261A944D002AA368 /* LaunchScreen.storyboard in Resources */,
+				3EEC0C18262BB5AA00735137 /* plantas 2.png in Resources */,
 				3E4776E4261A944D002AA368 /* Assets.xcassets in Resources */,
 				3E477721261AA9A9002AA368 /* view.png in Resources */,
 				3E477710261A96DF002AA368 /* image 5.png in Resources */,

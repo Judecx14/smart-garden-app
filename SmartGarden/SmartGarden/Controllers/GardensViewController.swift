@@ -17,7 +17,10 @@ class GardensViewController: UIViewController {
     @IBOutlet weak var lb_Nombre: UILabel!
     @IBOutlet weak var lb_Location: UILabel!
     @IBOutlet weak var btn_new_garden: UIButton!
+    @IBOutlet weak var IV_image: UIImageView!
+    @IBOutlet weak var lb_created_at: UILabel!
     
+    @IBOutlet weak var stackView2: UIStackView!
     
     @IBAction func new(_ sender: Any) {
         self.performSegue(withIdentifier: "addNewGarden", sender: nil)
@@ -28,6 +31,7 @@ class GardensViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        viewBK.layer.cornerRadius = 10
         btn_new_garden.layer.cornerRadius = 15
         btn_new_garden.layer.borderWidth = 5
         btn_new_garden.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
@@ -63,15 +67,33 @@ class GardensViewController: UIViewController {
                 //print("tengo este id: ",self.idd)
                 let height = 100
                 let spacing = 10
-                let positionY = 0
+                var positionY = 0
                 self.getStoredGardens(idde: userRecived.id) { (gardens) in
-                    for jardines in gardens{
+                    /*for jardines in gardens{
                         
                         let gardenStack = UIGardenStack(frame: CGRect(x: 0, y: positionY, width: Int(self.stackView.frame.width), height: height))
                         self.lb_Nombre.text = jardines.name
                         self.lb_Location.text = jardines.location
-                        self.viewBK.backgroundColor = .cyan
+                        self.lb_created_at.text = jardines.created_at
+                        self.IV_image.image = UIImage(named: "plantas 2.ong")
+                        self.viewBK.backgroundColor = .brown
                         self.stackView.addSubview(gardenStack)
+                        
+                    }*/
+                    gardens.forEach{ jardines in
+                        let gardenStack = UIGardenStack(frame: CGRect(x: 0, y: positionY, width: Int(self.stackView2.frame.width), height: height))
+                        /*
+                        print(jardines)
+                        self.lb_Nombre.text = jardines.name
+                        self.lb_Location.text = jardines.location
+                        self.lb_created_at.text = jardines.created_at
+                        self.IV_image.image = UIImage(named: "plantas 2.png")
+                        self.viewBK.backgroundColor = .brown
+                        self.stackView2.addSubview(gardenStack)
+                         */
+                        gardenStack.buildGarden(jardines)
+                        self.stackView2.addSubview(gardenStack)
+                        positionY += height + spacing
                         
                     }
                     self.scrollView.contentSize.height = CGFloat(5 * (height + spacing))
