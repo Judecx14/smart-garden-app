@@ -29,6 +29,7 @@
 		3E477725261AA9A9002AA368 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E47771E261AA9A9002AA368 /* profile.png */; };
 		3E6EFAA72628FAD4009A15A7 /* Gardens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EFAA62628FAD4009A15A7 /* Gardens.swift */; };
 		3E6EFAA926290CA3009A15A7 /* NewGardenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EFAA826290CA3009A15A7 /* NewGardenViewController.swift */; };
+		3E6F0064262B8B1D00B79BB8 /* UIGardenStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6F0063262B8B1D00B79BB8 /* UIGardenStack.swift */; };
 		3E9CF7C72625027600011AFF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9CF7C62625027600011AFF /* Extensions.swift */; };
 		3E9CF7CB26254DDA00011AFF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9CF7CA26254DDA00011AFF /* User.swift */; };
 		3E9F90C72625E57C00F9B9C3 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9F90C62625E57C00F9B9C3 /* App.swift */; };
@@ -106,6 +107,7 @@
 		3E47771E261AA9A9002AA368 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		3E6EFAA62628FAD4009A15A7 /* Gardens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gardens.swift; sourceTree = "<group>"; };
 		3E6EFAA826290CA3009A15A7 /* NewGardenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGardenViewController.swift; sourceTree = "<group>"; };
+		3E6F0063262B8B1D00B79BB8 /* UIGardenStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIGardenStack.swift; path = ../UIGardenStack.swift; sourceTree = "<group>"; };
 		3E9CF7C62625027600011AFF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3E9CF7CA26254DDA00011AFF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3E9F90C62625E57C00F9B9C3 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		3E4776DB261A944A002AA368 /* SmartGarden */ = {
 			isa = PBXGroup;
 			children = (
+				3E6F0065262B8B2600B79BB8 /* New Group */,
 				3E9CF7C926254D8700011AFF /* Classes */,
 				3EF9CCCD261BC778001E6ABD /* Controllers */,
 				3E477716261A96F1002AA368 /* Resources */,
@@ -271,6 +274,14 @@
 				3E47771C261AA9A8002AA368 /* help.png */,
 			);
 			path = MainResources;
+			sourceTree = "<group>";
+		};
+		3E6F0065262B8B2600B79BB8 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				3E6F0063262B8B1D00B79BB8 /* UIGardenStack.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		3E9CF7C826254D7500011AFF /* Extensions */ = {
@@ -546,6 +557,7 @@
 				3EB74BC7261E617C00AF0066 /* ProfileViewController.swift in Sources */,
 				3E9CF7CB26254DDA00011AFF /* User.swift in Sources */,
 				3EF9CCD1261BC7DC001E6ABD /* RegisterViewController.swift in Sources */,
+				3E6F0064262B8B1D00B79BB8 /* UIGardenStack.swift in Sources */,
 				3E9F90C9262610E200F9B9C3 /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

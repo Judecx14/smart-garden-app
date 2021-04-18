@@ -61,12 +61,20 @@ class GardensViewController: UIViewController {
                 let userRecived = try decoder.decode(UserLogged.self, from: data)
                 //self.getGardens(idd: self.idd)
                 //print("tengo este id: ",self.idd)
+                let height = 100
+                let spacing = 10
+                let positionY = 0
                 self.getStoredGardens(idde: userRecived.id) { (gardens) in
                     for jardines in gardens{
-                        //print(":C: \(self.idd)")
-                        print(jardines.name)
-                        print("espacio---")
+                        
+                        let gardenStack = UIGardenStack(frame: CGRect(x: 0, y: positionY, width: Int(self.stackView.frame.width), height: height))
+                        self.lb_Nombre.text = jardines.name
+                        self.lb_Location.text = jardines.location
+                        self.viewBK.backgroundColor = .cyan
+                        self.stackView.addSubview(gardenStack)
+                        
                     }
+                    self.scrollView.contentSize.height = CGFloat(5 * (height + spacing))
                 }
             }
             catch
@@ -86,18 +94,4 @@ class GardensViewController: UIViewController {
             }
         })
     }
-    /*func fillStack(){
-        let height = 150
-        let spacing = 10
-        let width = 150
-        var positionY = 0
-        self.array.reversed().forEach { (task) in
-            let itemTask = viewBK(frame: CGRect(x: 0, y: positionY, width: width, height: height))
-            lb_Nombre.text = ""
-            lb_Location.text = ""
-            self.stackView.addSubview(itemTask)
-            positionY += height + spacing
-        }
-        self.scrollView.contentSize.height = CGFloat(self.array.count * (height + spacing))
-    }*/
 }

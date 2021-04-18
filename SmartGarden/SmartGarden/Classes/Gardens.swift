@@ -9,6 +9,8 @@
 import Foundation
 
 struct GardensSaved: Codable {
+    var id:Int
+    var user_id:Int
     var name: String
     var location: String
     var created_at: String
