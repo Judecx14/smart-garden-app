@@ -21,6 +21,10 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    @IBAction func deleteProfile(_ sender: Any) {
+        self.loggedIn()
+    }
+    
     @IBAction func updateProfile(_ sender: Any) {
         let nombre = txf_name.text!
         let apellido = txf_lastName.text!
@@ -47,6 +51,7 @@ class ProfileViewController: UIViewController {
             }
         }
     }
+    
     func updateUser(id: Int,nameS:String,lastNameS:String,emailS:String){
         
         let nombreUP = txf_name.text
@@ -63,6 +68,7 @@ class ProfileViewController: UIViewController {
             }
         }
     }
+    
     func getUserID(id: Int){
         Alamofire.request("https://smart-garden-api-v12.herokuapp.com/getUser/\(id)", method: .get, headers: headers).responseData { (response) in
             guard let data = response.value else { return }
@@ -71,6 +77,28 @@ class ProfileViewController: UIViewController {
                 self.updateUser(id: id, nameS: decoder.name, lastNameS: decoder.lastName, emailS: decoder.email)
             }catch{
                 print("Error: \(error)")
+            }
+        }
+    }
+    func loggedIn(){
+        Alamofire.request("https://smart-garden-api-v12.herokuapp.com/loggedIn", method: .get, headers: headers).responseData{(response) in
+            guard let data = response.value else { return }
+            do{
+                let decoder = JSONDecoder()
+                let userLog = try decoder.decode(UserLogged.self, from: data)
+                self.deleteProfileID(idD: userLog.id)
+            }catch{
+                print("Error: \(error)")
+            }
+        }
+    }
+    func deleteProfileID(idD:Int){
+        Alamofire.request("https://smart-garden-api-v12.herokuapp.com/delete", method: .delete, parameters: ["id":idD], encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
+            if let JSON = response.result.value{
+                print(JSON)
+                self.performSegue(withIdentifier: "profileDeleted", sender: nil)
+            }else{
+                print("Nada")
             }
         }
     }
