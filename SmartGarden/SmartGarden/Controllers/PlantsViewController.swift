@@ -26,11 +26,7 @@ class PlantsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         btn_new_plant.layer.cornerRadius = 15
-        btn_new_plant.layer.borderWidth = 5
-        btn_new_plant.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         btn_new_category.layer.cornerRadius = 15
-        btn_new_category.layer.borderWidth = 5
-        btn_new_category.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
 
     }
     
@@ -47,6 +43,10 @@ class PlantsViewController: UIViewController {
                 alertEmptyPlants.dismiss(animated: true, completion: nil)
             }))
             self.present(alertEmptyPlants, animated: true, completion: nil)
+            self.txf_name_plant.shake()
+            self.txf_tipo_plant.shake()
+            self.txf_category_plant.shake()
+            
         }else{
             print("Aqui va el codigo para registrar planta")
         }
