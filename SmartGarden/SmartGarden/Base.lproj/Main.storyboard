@@ -579,6 +579,7 @@
                     </view>
                     <connections>
                         <outlet property="btn_new_plant" destination="50W-jS-sH7" id="9bW-k8-Lje"/>
+                        <segue destination="LsK-Ym-RLc" kind="show" identifier="goQR" id="dBb-Pc-mj7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6B-Lc-oPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1257,118 +1258,226 @@
             </objects>
             <point key="canvasLocation" x="6320" y="491"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="QwN-eJ-hlP">
+        <!--Plants View Controller-->
+        <scene sceneID="iml-bV-iXH">
             <objects>
-                <viewController id="nfS-X3-4bx" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="N28-Cr-3AT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController id="d3h-Mp-6CS" customClass="PlantsViewController" customModule="SmartGarden" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YV7-id-Hka">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1096"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="dua-6L-cRR">
-                                <rect key="frame" x="45" y="218.5" width="324" height="35"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EMT-bY-g1k">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1052"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TaO-28-zdF" userLabel="ContentScrollView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1052"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nueva Planta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0N-S4-wCS">
+                                                <rect key="frame" x="25" y="50" width="225" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="SbX-S4-5t3"/>
+                                                    <constraint firstAttribute="width" constant="225" id="vwM-iB-L4w"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="30"/>
+                                                <color key="textColor" red="0.086274509799999996" green="0.27058823529999998" blue="0.1019607843" alpha="0.93999999999999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de la planta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mzd-uh-0lf">
+                                                <rect key="frame" x="45" y="140" width="205" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                                <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="dua-6L-cRR">
+                                                <rect key="frame" x="45" y="174.5" width="324" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="LtK-53-f9O"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de la planta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U02-hC-XhS">
+                                                <rect key="frame" x="45" y="229.5" width="168" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                                <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tipo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ORv-Ny-M0x">
+                                                <rect key="frame" x="45" y="264" width="324" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="eez-jl-2tc"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria de la planta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Oa-E3-yWf">
+                                                <rect key="frame" x="45" y="319" width="222" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                                <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Categoria" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Egq-AD-yJj">
+                                                <rect key="frame" x="45" y="353.5" width="324" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="4gQ-iO-V6K"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YH-EE-EU0">
+                                                <rect key="frame" x="45" y="413.5" width="324" height="37"/>
+                                                <color key="backgroundColor" red="0.3921568627" green="0.73333333329999995" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                                <state key="normal" title="Registrar planta">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addNewPlant:" destination="d3h-Mp-6CS" eventType="touchUpInside" id="IdP-FU-56P"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nueva Categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OO2-X6-RGK">
+                                                <rect key="frame" x="25" y="500.5" width="279" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="4Mc-W3-ApI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="30"/>
+                                                <color key="textColor" red="0.086274509799999996" green="0.27058823529999998" blue="0.1019607843" alpha="0.93999999999999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de la categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbR-Yo-dhv">
+                                                <rect key="frame" x="45" y="570.5" width="236" height="25"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                                <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de categoria" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="7Bm-s9-K8g">
+                                                <rect key="frame" x="45" y="605.5" width="324" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="my0-eE-uAD"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clima de la categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kX2-Pn-rAE">
+                                                <rect key="frame" x="45" y="660.5" width="213" height="25"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                                <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tipo de clima" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="aux-hI-HpL">
+                                                <rect key="frame" x="45" y="695.5" width="324" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Ms8-1v-vM0"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibt-hs-5T8">
+                                                <rect key="frame" x="45" y="755.5" width="324" height="37"/>
+                                                <color key="backgroundColor" red="0.3921568627" green="0.73333333329999995" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                                <state key="normal" title="Registrar categoria">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addNewCategory:" destination="d3h-Mp-6CS" eventType="touchUpInside" id="FgT-j4-jTW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="dua-6L-cRR" firstAttribute="leading" secondItem="TaO-28-zdF" secondAttribute="leading" constant="45" id="2Na-5X-IJ1"/>
+                                            <constraint firstItem="9Oa-E3-yWf" firstAttribute="leading" secondItem="TaO-28-zdF" secondAttribute="leading" constant="45" id="5d2-hB-fZI"/>
+                                            <constraint firstItem="U02-hC-XhS" firstAttribute="leading" secondItem="TaO-28-zdF" secondAttribute="leading" constant="45" id="65e-9b-Z8w"/>
+                                            <constraint firstItem="Mzd-uh-0lf" firstAttribute="top" secondItem="O0N-S4-wCS" secondAttribute="bottom" constant="50" id="7PA-T8-uAo"/>
+                                            <constraint firstAttribute="trailing" secondItem="Egq-AD-yJj" secondAttribute="trailing" constant="45" id="7hg-W2-g2u"/>
+                                            <constraint firstItem="wbR-Yo-dhv" firstAttribute="leading" secondItem="TaO-28-zdF" secondAttribute="leading" constant="45" id="8Lv-2u-tSk"/>
+                                            <constraint firstItem="O0N-S4-wCS" firstAttribute="leading" secondItem="TaO-28-zdF" secondAttribute="leading" constant="25" id="BpQ-Z4-VCz"/>
+                                            <constraint firstItem="7Bm-s9-K8g" firstAttribute="top" secondItem="wbR-Yo-dhv" secondAttribute="bottom" constant="10" id="Ef7-Tt-YBs"/>
+                                            <constraint firstItem="OO2-X6-RGK" firstAttribute="leading" secondItem="TaO-28-zdF" secondAttribute="leading" constant="25" id="G9V-9y-45a"/>
+                                            <constraint firstItem="3YH-EE-EU0" firstAttribute="top" secondItem="Egq-AD-yJj" secondAttribute="bottom" constant="20" id="GxB-qG-TbS"/>
+                                            <constraint firstItem="ORv-Ny-M0x" firstAttribute="leading" secondItem="TaO-28-zdF" secondAttribute="leading" constant="45" id="Iox-Po-hVO"/>
+                                            <constraint firstItem="U02-hC-XhS" firstAttribute="top" secondItem="dua-6L-cRR" secondAttribute="bottom" constant="15" id="Kkb-Ng-5KG"/>
+                                            <constraint firstItem="dua-6L-cRR" firstAttribute="top" secondItem="Mzd-uh-0lf" secondAttribute="bottom" constant="10" id="Lxb-vF-B1e"/>
+                                            <constraint firstItem="9Oa-E3-yWf" firstAttribute="top" secondItem="ORv-Ny-M0x" secondAttribute="bottom" constant="15" id="Mdk-yY-kHI"/>
+                                            <constraint firstItem="ibt-hs-5T8" firstAttribute="top" secondItem="aux-hI-HpL" secondAttribute="bottom" constant="20" id="MuV-xP-vEd"/>
+                                            <constraint firstItem="3YH-EE-EU0" firstAttribute="leading" secondItem="TaO-28-zdF" secondAttribute="leading" constant="45" id="NqF-X7-Bin"/>
+                                            <constraint firstAttribute="trailing" secondItem="aux-hI-HpL" secondAttribute="trailing" constant="45" id="Pqc-J2-Z2g"/>
+                                            <constraint firstAttribute="trailing" secondItem="7Bm-s9-K8g" secondAttribute="trailing" constant="45" id="Qz8-c5-a1m"/>
+                                            <constraint firstItem="ibt-hs-5T8" firstAttribute="leading" secondItem="TaO-28-zdF" secondAttribute="leading" constant="45" id="U8u-r8-fYZ"/>
+                                            <constraint firstItem="Egq-AD-yJj" firstAttribute="leading" secondItem="TaO-28-zdF" secondAttribute="leading" constant="45" id="XKz-e9-h6i"/>
+                                            <constraint firstItem="wbR-Yo-dhv" firstAttribute="top" secondItem="OO2-X6-RGK" secondAttribute="bottom" constant="30" id="bgz-Ad-DHc"/>
+                                            <constraint firstItem="O0N-S4-wCS" firstAttribute="top" secondItem="TaO-28-zdF" secondAttribute="top" constant="50" id="c5G-Ku-OFq"/>
+                                            <constraint firstItem="7Bm-s9-K8g" firstAttribute="leading" secondItem="TaO-28-zdF" secondAttribute="leading" constant="45" id="cE3-2h-ZMx"/>
+                                            <constraint firstAttribute="trailing" secondItem="3YH-EE-EU0" secondAttribute="trailing" constant="45" id="cKi-hB-9bv"/>
+                                            <constraint firstItem="kX2-Pn-rAE" firstAttribute="top" secondItem="7Bm-s9-K8g" secondAttribute="bottom" constant="15" id="diS-Vq-qk3"/>
+                                            <constraint firstAttribute="trailing" secondItem="dua-6L-cRR" secondAttribute="trailing" constant="45" id="eJb-qu-pqY"/>
+                                            <constraint firstItem="ORv-Ny-M0x" firstAttribute="top" secondItem="U02-hC-XhS" secondAttribute="bottom" constant="10" id="f90-EL-j6e"/>
+                                            <constraint firstAttribute="height" constant="1052" id="naw-XG-7Ta"/>
+                                            <constraint firstAttribute="trailing" secondItem="OO2-X6-RGK" secondAttribute="trailing" constant="110" id="nmZ-rp-auB"/>
+                                            <constraint firstItem="Egq-AD-yJj" firstAttribute="top" secondItem="9Oa-E3-yWf" secondAttribute="bottom" constant="10" id="ofv-4z-EZ1"/>
+                                            <constraint firstItem="Mzd-uh-0lf" firstAttribute="leading" secondItem="TaO-28-zdF" secondAttribute="leading" constant="45" id="q7F-VJ-gEd"/>
+                                            <constraint firstAttribute="trailing" secondItem="ORv-Ny-M0x" secondAttribute="trailing" constant="45" id="rzW-sS-0cT"/>
+                                            <constraint firstAttribute="trailing" secondItem="ibt-hs-5T8" secondAttribute="trailing" constant="45" id="sQ6-Tb-LkT"/>
+                                            <constraint firstItem="kX2-Pn-rAE" firstAttribute="leading" secondItem="TaO-28-zdF" secondAttribute="leading" constant="45" id="tAh-lj-qV7"/>
+                                            <constraint firstItem="aux-hI-HpL" firstAttribute="top" secondItem="kX2-Pn-rAE" secondAttribute="bottom" constant="10" id="v5d-LM-5vO"/>
+                                            <constraint firstItem="aux-hI-HpL" firstAttribute="leading" secondItem="TaO-28-zdF" secondAttribute="leading" constant="45" id="w13-Xx-aWv"/>
+                                            <constraint firstItem="OO2-X6-RGK" firstAttribute="top" secondItem="3YH-EE-EU0" secondAttribute="bottom" constant="50" id="zyZ-J5-kti"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="nu0-Q0-qKH"/>
+                                    <constraint firstItem="TaO-28-zdF" firstAttribute="leading" secondItem="EMT-bY-g1k" secondAttribute="leading" id="3Gd-Jd-86d"/>
+                                    <constraint firstAttribute="trailing" secondItem="TaO-28-zdF" secondAttribute="trailing" id="Uey-ZQ-BSY"/>
+                                    <constraint firstItem="TaO-28-zdF" firstAttribute="top" secondItem="EMT-bY-g1k" secondAttribute="top" id="b54-d5-XCl"/>
+                                    <constraint firstAttribute="bottom" secondItem="TaO-28-zdF" secondAttribute="bottom" id="yrh-vF-yYs"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nueva Planta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0N-S4-wCS">
-                                <rect key="frame" x="20" y="94" width="225" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="SbX-S4-5t3"/>
-                                    <constraint firstAttribute="width" constant="225" id="vwM-iB-L4w"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="30"/>
-                                <color key="textColor" red="0.086274509799999996" green="0.27058823529999998" blue="0.1019607843" alpha="0.93999999999999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de la planta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mzd-uh-0lf">
-                                <rect key="frame" x="45" y="184" width="205" height="24.5"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
-                                <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de la planta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U02-hC-XhS">
-                                <rect key="frame" x="45" y="268.5" width="168" height="24.5"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
-                                <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tipo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ORv-Ny-M0x">
-                                <rect key="frame" x="45" y="303" width="324" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="PrV-et-cyw"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria de la planta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Oa-E3-yWf">
-                                <rect key="frame" x="45" y="353" width="222" height="24.5"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
-                                <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Categoria" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Egq-AD-yJj">
-                                <rect key="frame" x="45" y="387.5" width="324" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="to6-0W-a8g"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YH-EE-EU0">
-                                <rect key="frame" x="45" y="447.5" width="324" height="37"/>
-                                <color key="backgroundColor" red="0.3921568627" green="0.73333333329999995" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
-                                <state key="normal" title="Registrar planta">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="nZC-5s-GwN" firstAttribute="trailing" secondItem="dua-6L-cRR" secondAttribute="trailing" constant="45" id="2QL-Vk-HZf"/>
-                            <constraint firstItem="9Oa-E3-yWf" firstAttribute="top" secondItem="ORv-Ny-M0x" secondAttribute="bottom" constant="15" id="5AE-5V-Vpe"/>
-                            <constraint firstItem="U02-hC-XhS" firstAttribute="leading" secondItem="nZC-5s-GwN" secondAttribute="leading" constant="45" id="5Kx-vz-6mv"/>
-                            <constraint firstItem="nZC-5s-GwN" firstAttribute="trailing" secondItem="ORv-Ny-M0x" secondAttribute="trailing" constant="45" id="8vJ-BA-Y1N"/>
-                            <constraint firstItem="O0N-S4-wCS" firstAttribute="leading" secondItem="nZC-5s-GwN" secondAttribute="leading" constant="20" id="9Xm-mz-N9j"/>
-                            <constraint firstItem="ORv-Ny-M0x" firstAttribute="leading" secondItem="nZC-5s-GwN" secondAttribute="leading" constant="45" id="F8M-VQ-arq"/>
-                            <constraint firstItem="U02-hC-XhS" firstAttribute="top" secondItem="dua-6L-cRR" secondAttribute="bottom" constant="15" id="Ica-83-PQc"/>
-                            <constraint firstItem="dua-6L-cRR" firstAttribute="leading" secondItem="nZC-5s-GwN" secondAttribute="leading" constant="45" id="LFm-DG-Wqz"/>
-                            <constraint firstItem="ORv-Ny-M0x" firstAttribute="top" secondItem="U02-hC-XhS" secondAttribute="bottom" constant="10" id="PRN-hE-fZ6"/>
-                            <constraint firstItem="O0N-S4-wCS" firstAttribute="top" secondItem="nZC-5s-GwN" secondAttribute="top" constant="50" id="PuA-ak-PR7"/>
-                            <constraint firstItem="Mzd-uh-0lf" firstAttribute="top" secondItem="O0N-S4-wCS" secondAttribute="bottom" constant="50" id="TQj-yT-fdp"/>
-                            <constraint firstItem="Mzd-uh-0lf" firstAttribute="leading" secondItem="nZC-5s-GwN" secondAttribute="leading" constant="45" id="TZa-zw-5ri"/>
-                            <constraint firstItem="Egq-AD-yJj" firstAttribute="top" secondItem="9Oa-E3-yWf" secondAttribute="bottom" constant="10" id="UKk-43-lL6"/>
-                            <constraint firstItem="3YH-EE-EU0" firstAttribute="top" secondItem="Egq-AD-yJj" secondAttribute="bottom" constant="25" id="hEx-ye-YZx"/>
-                            <constraint firstItem="3YH-EE-EU0" firstAttribute="leading" secondItem="nZC-5s-GwN" secondAttribute="leading" constant="45" id="iYL-4a-oX7"/>
-                            <constraint firstItem="Egq-AD-yJj" firstAttribute="leading" secondItem="nZC-5s-GwN" secondAttribute="leading" constant="45" id="kCD-eN-ZEo"/>
-                            <constraint firstItem="dua-6L-cRR" firstAttribute="top" secondItem="Mzd-uh-0lf" secondAttribute="bottom" constant="10" id="rOe-us-uBJ"/>
-                            <constraint firstItem="nZC-5s-GwN" firstAttribute="trailing" secondItem="3YH-EE-EU0" secondAttribute="trailing" constant="45" id="rnQ-Gf-pAi"/>
-                            <constraint firstItem="9Oa-E3-yWf" firstAttribute="leading" secondItem="nZC-5s-GwN" secondAttribute="leading" constant="45" id="tR1-Gn-Rxr"/>
-                            <constraint firstItem="nZC-5s-GwN" firstAttribute="trailing" secondItem="Egq-AD-yJj" secondAttribute="trailing" constant="45" id="xzn-Hd-YSL"/>
+                            <constraint firstItem="EMT-bY-g1k" firstAttribute="leading" secondItem="KAG-XD-ZMW" secondAttribute="leading" id="4UD-u6-Jbc"/>
+                            <constraint firstItem="EMT-bY-g1k" firstAttribute="trailing" secondItem="KAG-XD-ZMW" secondAttribute="trailing" id="4em-pB-vLm"/>
+                            <constraint firstAttribute="bottom" secondItem="EMT-bY-g1k" secondAttribute="bottom" id="hmr-FP-n8s"/>
+                            <constraint firstItem="EMT-bY-g1k" firstAttribute="top" secondItem="KAG-XD-ZMW" secondAttribute="top" id="qij-k8-ZtY"/>
+                            <constraint firstItem="TaO-28-zdF" firstAttribute="width" secondItem="YV7-id-Hka" secondAttribute="width" id="rxH-Ng-OjF"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="nZC-5s-GwN"/>
+                        <viewLayoutGuide key="safeArea" id="KAG-XD-ZMW"/>
                     </view>
+                    <size key="freeformSize" width="414" height="1096"/>
+                    <connections>
+                        <outlet property="btn_new_category" destination="ibt-hs-5T8" id="7vM-EX-Y8T"/>
+                        <outlet property="btn_new_plant" destination="3YH-EE-EU0" id="5VU-c1-DQk"/>
+                        <outlet property="txf_category_plant" destination="Egq-AD-yJj" id="VoQ-eg-iPe"/>
+                        <outlet property="txf_climate_plant" destination="aux-hI-HpL" id="xEw-PU-Qw0"/>
+                        <outlet property="txf_name_category" destination="7Bm-s9-K8g" id="Yy3-tC-1LQ"/>
+                        <outlet property="txf_name_plant" destination="dua-6L-cRR" id="Paj-fM-HeI"/>
+                        <outlet property="txf_tipo_plant" destination="ORv-Ny-M0x" id="LHl-Fc-lov"/>
+                        <segue destination="VuX-ok-43a" kind="presentation" identifier="PlantAdded" id="Pbp-yy-oQQ"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lcb-27-PyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oWg-kZ-SXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3457.971014492754" y="1220.7589285714284"/>
+            <point key="canvasLocation" x="3135" y="1288"/>
         </scene>
-        <!--View Controller-->
+        <!--Scanner View Controller-->
         <scene sceneID="d5M-eW-wfN">
             <objects>
-                <viewController id="LsK-Ym-RLc" sceneMemberID="viewController">
+                <viewController id="LsK-Ym-RLc" customClass="ScannerViewController" customModule="SmartGarden" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B0B-3H-IYo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6j1-CC-rqh"/>
                     </view>
+                    <connections>
+                        <segue destination="d3h-Mp-6CS" kind="presentation" identifier="goAddPlant" id="rVs-8G-AnL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5hI-qN-NOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1830,8 +1939,10 @@
         <image name="termometro 1.png" width="63" height="63"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="sK4-Lb-df5"/>
+        <segue reference="Pbp-yy-oQQ"/>
         <segue reference="7qc-XD-lHa"/>
-        <segue reference="mEf-P6-gRf"/>
+        <segue reference="r7X-w4-8de"/>
         <segue reference="jyG-tY-Ft0"/>
         <segue reference="fx1-pU-wgq"/>
     </inferredMetricsTieBreakers>

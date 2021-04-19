@@ -7,28 +7,73 @@
 //
 
 import UIKit
+import Alamofire
 
 class PlantsViewController: UIViewController {
 
+    @IBOutlet weak var txf_name_plant: UITextField!
+    @IBOutlet weak var txf_tipo_plant: UITextField!
+    @IBOutlet weak var txf_category_plant: UITextField!
+    @IBOutlet weak var txf_name_category: UITextField!
+    @IBOutlet weak var txf_climate_plant: UITextField!
     @IBOutlet weak var btn_new_plant: UIButton!
+    @IBOutlet weak var btn_new_category: UIButton!
+    
+    
+    let headers:HTTPHeaders = ["Authorization":"Bearer \(App.shared.tokensaved)","Accept":"aplication/json"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         btn_new_plant.layer.cornerRadius = 15
         btn_new_plant.layer.borderWidth = 5
         btn_new_plant.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        btn_new_category.layer.cornerRadius = 15
+        btn_new_category.layer.borderWidth = 5
+        btn_new_category.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    @IBAction func addNewPlant(_ sender: Any) {
+        
+        let namePlant = txf_name_plant.text!
+        let spicePlant = txf_tipo_plant.text!
+        let categoryPlant = txf_category_plant.text!
+        
+        if namePlant.isEmpty || spicePlant.isEmpty || categoryPlant.isEmpty{
+            
+            let alertEmptyPlants = UIAlertController(title: "Campos vacios", message: "Porfavor rellena todos los campos para añadir tu planta", preferredStyle: .alert)
+            alertEmptyPlants.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (alertAction) in
+                alertEmptyPlants.dismiss(animated: true, completion: nil)
+            }))
+            self.present(alertEmptyPlants, animated: true, completion: nil)
+        }else{
+            print("Aqui va el codigo para registrar planta")
+        }
+        
+    }//Termina accion añadir planta
+    
+    @IBAction func addNewCategory(_ sender: Any) {
+        
+        let nombreCat = self.txf_name_category.text!
+        let climaCat = self.txf_climate_plant.text!
+        
+        if nombreCat.isEmpty || climaCat.isEmpty{
+            
+            let alertEmptyCategory = UIAlertController(title: "Campos vacios", message: "Porfavor llena ambos campos", preferredStyle: .alert)
+            alertEmptyCategory.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (alertAction) in
+                alertEmptyCategory.dismiss(animated: true, completion: nil)
+            }))
+            self.present(alertEmptyCategory, animated: true, completion: nil)
+            self.txf_name_category.shake()
+            self.txf_climate_plant.shake()
+            
+        }else{
+            Alamofire.request("https://smart-garden-api-v12.herokuapp.com/api/newCategory", method: .post, parameters: ["name":nombreCat, "climate":climaCat], encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
+                if let JSON = response.value{
+                    print(JSON)
+                }
+            }
+        }
+    }//Termina accion agregar categoria
 }
