@@ -728,10 +728,10 @@
             </objects>
             <point key="canvasLocation" x="4926" y="493"/>
         </scene>
-        <!--View Controller-->
+        <!--New Sensor View Controller-->
         <scene sceneID="oNU-l5-nqK">
             <objects>
-                <viewController id="wig-DE-tvK" sceneMemberID="viewController">
+                <viewController id="wig-DE-tvK" customClass="NewSensorViewController" customModule="SmartGarden" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ii-8f-L19">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -794,6 +794,9 @@
                                 <state key="normal" title="Añadir sensor">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="newSensorButton:" destination="wig-DE-tvK" eventType="touchUpInside" id="EID-Jp-BOw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -823,7 +826,10 @@
                         <viewLayoutGuide key="safeArea" id="kGE-my-vAp"/>
                     </view>
                     <connections>
-                        <segue destination="4nF-Nu-4dN" kind="presentation" identifier="sensorAdded" id="VCG-g3-VoB"/>
+                        <outlet property="txf_nombre" destination="0C5-YR-VSy" id="1qp-Dv-w0R"/>
+                        <outlet property="txf_pines" destination="Jen-uv-cbH" id="A4j-fT-BVq"/>
+                        <outlet property="txf_tipo" destination="Ixe-k5-GhR" id="Wq1-6u-3te"/>
+                        <segue destination="4nF-Nu-4dN" kind="presentation" identifier="sensorAdded" id="sK4-Lb-df5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QUg-gl-uVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -931,7 +937,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="144" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
-                                                    <segue destination="wig-DE-tvK" kind="show" id="x86-6T-xbA"/>
+                                                    <segue destination="wig-DE-tvK" kind="show" id="rFS-bR-U4M"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1824,7 +1830,6 @@
         <image name="termometro 1.png" width="63" height="63"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VCG-g3-VoB"/>
         <segue reference="7qc-XD-lHa"/>
         <segue reference="mEf-P6-gRf"/>
         <segue reference="jyG-tY-Ft0"/>
