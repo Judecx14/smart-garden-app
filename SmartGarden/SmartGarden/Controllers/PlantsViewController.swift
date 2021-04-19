@@ -49,6 +49,7 @@ class PlantsViewController: UIViewController {
             
         }else{
             print("Aqui va el codigo para registrar planta")
+            self.performSegue(withIdentifier: "PlantAdded", sender: nil)
         }
         
     }//Termina accion añadir planta

@@ -10,7 +10,7 @@ import UIKit
 
 class UIGardenStack: UIView {
     
-    public private(set) var gardenName:UILabel!
+    public private(set) var gardenName:UILabel?
     public private(set) var gardenLocation:UILabel?
     public private(set) var gardenCreatedAt:UILabel?
     public private(set) var imageGarden:UIImage?
@@ -18,9 +18,8 @@ class UIGardenStack: UIView {
     
     func buildGarden(_ garden:GardensSaved){
         
-        self.gardenName = UILabel(frame: CGRect(x: 15, y: 0, width: self.frame.size.width, height: self.frame.size.height))
-        self.gardenName!.text = garden.name
-        print(self.gardenName!.text)
+        self.gardenName? = UILabel(frame: CGRect(x: 15, y: 0, width: self.frame.size.width, height: self.frame.size.height))
+        self.gardenName?.text = garden.name
         self.gardenName?.font = UIFont(name: "Verdana", size: 10)
         self.gardenName?.textColor = UIColor.darkGray
         self.gardenLocation = UILabel(frame: CGRect(x: 15, y: 0, width: self.frame.size.width, height: self.frame.size.height))
