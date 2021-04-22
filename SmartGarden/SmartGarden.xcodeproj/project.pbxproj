@@ -67,6 +67,7 @@
 		3EF9CCCF261BC7A4001E6ABD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF9CCCE261BC7A4001E6ABD /* LoginViewController.swift */; };
 		3EF9CCD1261BC7DC001E6ABD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF9CCD0261BC7DC001E6ABD /* RegisterViewController.swift */; };
 		58785AA40FAB49B8E8141EE9 /* Pods_SmartGarden.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BDC880986605C116B4CFC3 /* Pods_SmartGarden.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		AC2E99782631223E003C134C /* TestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E99772631223E003C134C /* TestButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +154,7 @@
 		3EF9CCD0261BC7DC001E6ABD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		52BDC880986605C116B4CFC3 /* Pods_SmartGarden.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartGarden.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C85564B9DE6D99019502DA /* Pods-SmartGarden.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGarden.release.xcconfig"; path = "Target Support Files/Pods-SmartGarden/Pods-SmartGarden.release.xcconfig"; sourceTree = "<group>"; };
+		AC2E99772631223E003C134C /* TestButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +229,7 @@
 				3E4776E5261A944D002AA368 /* LaunchScreen.storyboard */,
 				3E4776E8261A944D002AA368 /* Info.plist */,
 				3E9CF7C826254D7500011AFF /* Extensions */,
+				AC2E99772631223E003C134C /* TestButton.swift */,
 			);
 			path = SmartGarden;
 			sourceTree = "<group>";
@@ -599,6 +602,7 @@
 				3EA3C7E92626792F00C759F5 /* HTTPRequests.swift in Sources */,
 				3EB74BC7261E617C00AF0066 /* ProfileViewController.swift in Sources */,
 				3E9CF7CB26254DDA00011AFF /* User.swift in Sources */,
+				AC2E99782631223E003C134C /* TestButton.swift in Sources */,
 				3EF9CCD1261BC7DC001E6ABD /* RegisterViewController.swift in Sources */,
 				3E6F0064262B8B1D00B79BB8 /* UIGardenStack.swift in Sources */,
 				3EEC0C29262D230C00735137 /* GenerateQRViewController.swift in Sources */,

@@ -55,14 +55,24 @@ class GardensViewController: UIViewController {
                 var positionY = 0
                 
                 self.getStoredGardens(idde: userLog.id, completionHandler: { (gardens) in
+                    let testButton = TestButton(frame: CGRect(x: 20, y: 20, width: 185, height: 200))
+                    let testButtonn = TestButton(frame: CGRect(x: 220, y: 20, width: 185, height: 200))
+                    let testButtonnn = TestButton(frame: CGRect(x: 20, y: 235, width: 185, height: 200))
                     gardens.forEach({ (jardines) in
-                        print(jardines.name)
                         
+                        
+                   
+
+                        
+                        //print(jardines.name)
                         /*let gardenStack = UIGardenStack(frame: CGRect(x: 0, y: positionY, width: Int(self.stackView.frame.width), height: height))
                         gardenStack.buildGarden(jardines)
                         self.scrollView.addSubview(gardenStack)
                         positionY += height + spacing*/
                     })
+                    self.scrollView.addSubview(testButton)
+                    self.scrollView.addSubview(testButtonn)
+                    self.scrollView.addSubview(testButtonnn)
                     //self.scrollView.contentSize.height = CGFloat(5 * (height + spacing))
                 })
             }catch{
@@ -73,10 +83,10 @@ class GardensViewController: UIViewController {
             
             
     func getStoredGardens(idde:Int, completionHandler: @escaping([GardensSaved])->Void){
-        Alamofire.request("https://smart-garden-api-v12.herokuapp.com/api/Garden/showByUser?id=4", method: .get).responseData(completionHandler: {(response) in
+        Alamofire.request("https://smart-garden-api-v12.herokuapp.com/api/Garden/showByUser?id=\(idde)", method: .get).responseData(completionHandler: {(response) in
             guard let data = response.value else { return }
             do{
-                print("xcosa", idde)
+                //print("xcosa", idde)
                 let decoder = try  JSONDecoder().decode([GardensSaved].self , from: data)
                 completionHandler(decoder)
                 print(decoder)
